@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+    height: 110rem;
+    background-color: $color-tertiary-light;
+    margin-top: 15rem;
+    position: relative;
+    &__content-box {
+        width: 160rem;
+        height: 93.8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__info{
+        &:not(:last-child) {
+            margin-right: 14rem;
+        }
+        &-list {
+            list-style: none;
+            // width: 35rem;
+         &-item {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 2rem;
+            text-transform: uppercase;
+            &:not(:last-child) {
+                margin-bottom: 2.2rem;
+            }
+            & a {
+                text-decoration: none;
+                color: $color-primary;
+                transition: all .2s;
+                &:hover {
+                    color: $color-secondary
+                }
+
+            }
+         }   
+        }
+    }
+    .social-icons-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copyright-symbol {
+        content: "\00A9";
+    }
+}

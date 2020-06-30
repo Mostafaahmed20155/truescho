@@ -1,0 +1,37 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 13rem;
+    padding: 4rem 23.8rem 4rem 23.8rem ;
+    background-color: $color-tertiary;
+    z-index: 100;
+    transition: top 0.3s;
+    @include dropShadow;
+    &__logo-box {
+        margin-right: auto;
+    }
+    .nav-bar {
+        &__list {
+            display: flex;
+        }
+        &__item {
+            list-style: none;
+            &:not(:last-child) {
+                margin-right: 5.9rem;
+            }
+            &-nav {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $color-primary;
+                font-weight: 700;
+                &:hover {
+                    color: $color-secondary;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+}
