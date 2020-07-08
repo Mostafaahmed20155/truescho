@@ -103,19 +103,3 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
-
-//AOS INITIALIZATION
-
-
-//COUNT UP JS
-
-var options = {
-    useEasing : true,
-    useGrouping : true,
-    separator : ',',
-    decimal : '.',
-    prefix : '',
-    suffix : ''
-  };
-  var jobsCounter = new CountUp("jobsNumber", 0, 6308, 0, 2.5, options);
-  jobsCounter.start();

@@ -348,6 +348,9 @@
     .card-picture-box{
         position: relative;
     }
+    .card-picture {
+        width: 38.7rem;
+    }
     .opportunity-type-label {
         position: absolute;
         left: 0;
@@ -653,7 +656,7 @@
         box-shadow: 0rem 0rem 3rem rgba($color: #000000, $alpha: 0.16);
         position: relative;
         text-align: center;
-        margin-right: 7.5rem;
+        margin-right: 3.5rem;
         .colored-container{
             width: 100%;
             height: 13.7rem;

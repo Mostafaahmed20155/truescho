@@ -16,6 +16,8 @@
     .nav-bar {
         &__list {
             display: flex;
+            align-items: center;
+            justify-self: center;
         }
         &__item {
             list-style: none;
@@ -31,6 +33,54 @@
                     color: $color-secondary;
                     transition: all .2s;
                 }
+            }
+        }
+    }
+    .messages-icon {
+        &-box {
+            position: relative;
+        }
+        cursor: pointer;
+    }
+    .messages-number {
+        position: absolute;
+        top: -10px;
+        background-color: #FF3B3B;
+        padding: 2px 8px;
+        border-radius: 50%;
+        color: white;
+    }
+    .notification-icon {
+        &-box {
+            position: relative;
+        }
+        cursor: pointer;
+    }
+    .notification-number {
+        position: absolute;
+        top: -10px;
+        background-color: #FF3B3B;
+        padding: 2px 8px;
+        border-radius: 50%;
+        color: white;
+    }
+    .user-pic-box {
+        margin-right: 1.7rem;
+    }
+    .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__name {
+            font-weight: 700;
+            font-family: inherit;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: $color-primary;
+            transition: all .2s;
+            &:hover {
+                color: $color-secondary;
             }
         }
     }
