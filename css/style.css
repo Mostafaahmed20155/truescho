@@ -35,11 +35,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 1440px) {
-    html {
-      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -355,7 +352,8 @@ h1 {
       text-decoration: none;
       text-transform: uppercase;
       color: #152850;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 1.3rem; }
       .navigation .nav-bar__item-nav:hover {
         color: #00A8CC;
         transition: all .2s; }

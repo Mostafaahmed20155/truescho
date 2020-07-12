@@ -8,11 +8,11 @@
 }
 
 html {
-    font-size: 62.5%; 
+    font-size: 50%; 
     scroll-behavior: smooth;
-    @media only screen and (max-width: 1440px) {
-        font-size: 50%;
-    }
+    // @media only screen and (max-width: 1440px) {
+    //     font-size: 50%;
+    // }
     
     
     // @include respond (tab-land) { //width <1200px
