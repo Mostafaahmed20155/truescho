@@ -879,7 +879,8 @@ h1 {
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
-    margin-right: 8rem; }
+    margin-right: 8rem;
+    position: relative; }
     .best-jobs-section__card-header {
       font-size: 1.5rem;
       font-family: inherit;
@@ -1650,7 +1651,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   .best-jobs-section-signed__header {
     color: #000000;
     text-align: center;
@@ -3865,6 +3867,141 @@ h1 {
       z-index: 1; }
       .thanks-for-applying__content-box .right-container__illustration {
         width: 40rem; }
+
+.fluid-containter {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 10rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20rem; }
+  .fluid-containter__left-illustration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80rem;
+    z-index: -1; }
+  .fluid-containter__right-illustration {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 80rem; }
+  .fluid-containter__middle-illustration {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 84%; }
+  @media only screen and (max-width: 1440px) {
+    .fluid-containter__middle-illustration {
+      width: 100%; } }
+  .fluid-containter .sign-up-box {
+    min-width: 60rem;
+    min-height: 50rem;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    padding: 7rem; }
+    .fluid-containter .sign-up-box__header {
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: inherit;
+      color: black; }
+    .fluid-containter .sign-up-box .horizontal-line {
+      width: 20%;
+      height: 0.5rem;
+      background-color: black;
+      margin: 1rem 0;
+      border-radius: 1rem; }
+    .fluid-containter .sign-up-box__form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 60rem;
+      height: 60rem; }
+    .fluid-containter .sign-up-box .input-width-fix {
+      width: 60%;
+      margin-right: 10rem !important; }
+    .fluid-containter .sign-up-box__input {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      margin-right: 3rem; }
+      .fluid-containter .sign-up-box__input-label {
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: #152850; }
+      .fluid-containter .sign-up-box__input-field {
+        padding: 1.5rem;
+        border: 0.1rem solid #707070;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: inherit;
+        margin-top: 1rem; }
+      .fluid-containter .sign-up-box__input-submit-btn {
+        border: none;
+        background-color: #8ab1f2;
+        padding: 1.5rem 6rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: inherit;
+        width: 100%;
+        color: #FFFFFF;
+        border-radius: 1rem;
+        box-shadow: 0 0 1.5rem rgba(138, 177, 242, 0.5);
+        margin-top: 5rem;
+        cursor: pointer;
+        transition: all 0.2s; }
+        .fluid-containter .sign-up-box__input-submit-btn:hover {
+          background-color: #152850;
+          box-shadow: 0 0 1rem rgba(138, 177, 242, 0.8); }
+        .fluid-containter .sign-up-box__input-submit-btn:focus {
+          outline: none; }
+    .fluid-containter .sign-up-box .or-word {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: inherit;
+      margin-top: 2rem; }
+    .fluid-containter .sign-up-box .social-media-sign {
+      border: none;
+      padding: 1.5rem 6rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: inherit;
+      width: 100%;
+      color: #FFFFFF;
+      border-radius: 1rem;
+      margin-top: 3rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .fluid-containter .sign-up-box .fb {
+      background-color: #3b579d;
+      box-shadow: 0 0 1.5rem rgba(59, 87, 157, 0.5); }
+    .fluid-containter .sign-up-box .g {
+      background-color: #EA5827;
+      box-shadow: 0 0 1.5rem rgba(234, 88, 39, 0.5); }
+
+.form-flex {
+  width: 100rem !important; }
+
+.btn-width-fix {
+  width: 60% !important; }
+
+.hr-width-fix {
+  width: 10% !important; }
 
 .swiper-container {
   width: 100%;
