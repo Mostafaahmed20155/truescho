@@ -25,59 +25,76 @@
       <div class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="home-page.html" class="nav-bar__item-nav">Home</a>
+            <a href="home-page.html" class="nav-bar__item-nav ">Home</a>
           </li>
           <li class="nav-bar__item">
             <a href="my-network.html" class="nav-bar__item-nav">My network</a>
           </li>
-          <li class="nav-bar__item">
-            <a href="jobs.html" class="nav-bar__item-nav">Jobs</a>
+          <li class="nav-bar__item dropdown">
+            <a href="jobs.html" class="nav-bar__item-nav dropbtn">Jobs</a>
+            <div class="dropdown-content">
+              <a href="#">All Jobs</a>
+              <a href="#">Engineering</a>
+              <a href="#">Information Technology</a>
+              <a href="#">Media, TV, and Jounrals</a>
+              <a href="#">Future Jobs</a>
+              <a href="#">Education Sector</a>
+            </div>
           </li>
-          <li class="nav-bar__item">
-            <a href="services.html" class="nav-bar__item-nav">Services</a>
-          </li>
-          <li class="nav-bar__item">
-            <a href="organizations.html" class="nav-bar__item-nav"
-              >Organizations</a
-            >
-          </li>
-          <li class="nav-bar__item">
-            <a href="organizations.html" class="nav-bar__item-nav"
-              >Opportunities</a
-            >
-          </li>
-          <li class="nav-bar__item">
-            <div class="messages-icon-box">
-              <img
-                src="img/messages-icon.svg"
-                alt="messages"
-                class="messages-icon"
-              />
-              <span class="messages-number">1</span>
+          <li class="nav-bar__item dropdown">
+            <a href="services.html" class="nav-bar__item-nav dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </li>
           <li class="nav-bar__item">
-            <div class="notification-icon-box">
-              <img
-                src="img/notification-icon.svg"
-                alt="notification"
-                class="notification-icon"
-              />
-              <span class="notification-number">3</span>
+            <a href="organizations.html" class="nav-bar__item-nav ">Organizations</a>
+          </li>
+          <li class="nav-bar__item dropdown">
+            <a href="organizations.html" class="nav-bar__item-nav dropbtn">Opportunities</a>
+            <div class="dropdown-content">
+              <a href="#">Bachelor scholarships</a>
+              <a href="#">Masters scholarships</a>
+              <a href="#">PHD scholarships</a>
+              <a href="#">Exchange Programs</a>
+              <a href="#">Job Offers</a>
+              <a href="#">Internships</a>
+              <a href="#">Volunteering Opportunities</a>
+              <a href="#">Workshops</a>
+              <a href="#">Courses</a>
             </div>
           </li>
-          <li class="nav-bar__item user-info">
+          <li class="nav-bar__item">
+             <div class="messages-icon-box">
+                 <img src="img/messages-icon.svg" alt="messages" class="messages-icon">
+                 <span class="messages-number">1</span>
+             </div>
+          </li>
+          <li class="nav-bar__item dropdown">
+             <div class="notification-icon-box">
+                 <img src="img/notification-icon.svg" alt="notification" class="notification-icon">
+                 <span class="notification-number">3</span>
+             </div>
+          </li>
+          <li class="nav-bar__item user-info dropdown">
             <div class="user-pic-box">
-              <img src="img/user-pic.png" alt="user pic" class="user-pic" />
+                <img src="img/user-pic.png" alt="user pic" class="user-pic">
             </div>
-            <div class="user-info__name">Michelle</div>
+            <div class="user-info__name dropbtn">Michelle</div>
+            <div class="dropdown-content u-absolute-top">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </li>
           <li class="nav-bar__item">
             <a href="#" class="nav-bar__item-nav">Ar</a>
           </li>
         </ul>
       </div>
-    </div>
+  </div>
     <div class="organization-cover-pic-box">
       <img
         src="img/org-cover-pic.png"
@@ -114,7 +131,7 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="orgs-job-apply-btn">Apply now</a>
+        <a href="#apply-for-job" class="orgs-job-apply-btn">Apply now</a>
       </div>
       <div class="right-panel">
         <h1 class="right-panel__header">
@@ -251,11 +268,7 @@
                 class="job-comments__content"
                 placeholder="Please write your comments here..."
               ></textarea>
-              <a
-                type="submit"
-                class="job-comments__send-icon"
-                method="POST"
-              >
+              <a type="submit" class="job-comments__send-icon" method="POST">
                 <img
                   src="img/Send blue icon.png"
                   alt="send "
@@ -292,7 +305,7 @@
                   </p>
                 </div>
               </div>
-              <hr/>
+              <hr />
               <div class="user-job-comment">
                 <div class="user-job-pic-box">
                   <img
@@ -444,7 +457,82 @@
         </div>
       </div>
     </footer>
-
+    <div class="popup" id="apply-for-job">
+      <div class="popup__content">
+        <div class="popup__left">
+          <h1 class="popup__header">Applying for a job</h1>
+          <div class="header__underline"></div>
+          <form action="/action_page.php">
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              placeholder="none"
+              class="add-cv-input"
+            />
+            <div class="add-cv">
+              <div class="add-cv__title-box">
+                <img
+                  src="img/adding icon.svg"
+                  alt="add icon"
+                  class="add-cv-icon"
+                />
+                <h3 class="add-cv__title">add a cv</h3>
+              </div>
+            </div>
+          </form>
+          <div class="applying-for-job-illustration-box">
+            <img
+              src="img/applying-for-a-job.svg"
+              alt="apply for job"
+              class="applying-for-job-illustration"
+            />
+          </div>
+        </div>
+        <div class="popup__right">
+          <a href="#tours_section" class="popup__closing">×</a>
+          <form>
+            <div class="input">
+              <label for="fullname" class="popup__label-style">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="popup__input-style"
+                placeholder="Full Name..."
+              />
+            </div>
+            <div class="input">
+              <label for="email" class="popup__label-style">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="popup__input-style"
+                placeholder="Email..."
+              />
+            </div>
+            <div class="input">
+              <label for="phone" class="popup__label-style">Phone Number</label>
+              <input
+                type="text"
+                id="phone-number"
+                name="phone-number"
+                class="popup__input-style"
+                placeholder="Phone Number..."
+              />
+            </div>
+            <div class="input">
+              <label for="message" class="popup__label-style">Message</label>
+              <textarea id="message" name="message" rows="3" cols="60" class="input-message" placeholder="Your message ....">
+              
+              </textarea>
+            </div>
+            <button class="input-btn" method="POST">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!-- DESIGN IN JS -->

@@ -23,6 +23,8 @@
 @import "components/footer";
 @import "components/nav-bar";
 @import "components/pagination";
+@import "components/drop-down-menu";
+@import "components/form-inputs";
 
 
 // LAYOUT FILES
@@ -48,6 +50,7 @@
 @import "pages/timeline";
 @import "pages/single-service-page";
 @import "pages/popup";
+@import "pages/apply-through-truescho";
 
 //SWIPER FILES
 @import "components/swipper.scss";

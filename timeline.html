@@ -87,13 +87,13 @@
             </li>
             <hr />
             <li class="options__items">
-              <a href="#" class="options__item">Add an experience</a>
+              <a href="#add-experience" class="options__item">Add an experience</a>
             </li>
             <li class="options__items">
-              <a href="#" class="options__item">Add a promoted post</a>
+              <a href="#promoted-post" class="options__item">Add a promoted post</a>
             </li>
             <li class="options__items">
-              <a href="#" class="options__item">Volunteer</a>
+              <a href="#volunteer-with-truescho" class="options__item">Volunteer</a>
             </li>
             <li class="options__items">
               <a href="#" class="options__item">Favourities</a>
@@ -440,6 +440,295 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="volunteer-with-truescho">
+      <div class="popup__content">
+        <div class="popup__left">
+          <h1 class="popup__header">Volunteer with truescho</h1>
+          <div class="header__underline"></div>
+          <form action="/action_page.php">
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              placeholder="none"
+              class="add-cv-input"
+            />
+            <div class="add-cv">
+              <div class="add-cv__title-box">
+                <img
+                  src="img/adding icon.svg"
+                  alt="add icon"
+                  class="add-cv-icon"
+                />
+                <h3 class="add-cv__title">add a cv</h3>
+              </div>
+            </div>
+          </form>
+          <div class="applying-for-job-illustration-box">
+            <img
+              src="img/volunteer-with-truescho.svg"
+              alt="apply for job"
+              class="applying-for-job-illustration"
+            />
+          </div>
+        </div>
+        <div class="popup__right">
+          <a href="#tours_section" class="popup__closing">×</a>
+          <form>
+            <div class="input">
+              <label for="fullname" class="popup__label-style">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="popup__input-style"
+                placeholder="Full Name..."
+              />
+            </div>
+            <div class="input">
+              <label for="email" class="popup__label-style">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="popup__input-style"
+                placeholder="Email..."
+              />
+            </div>
+            <div class="input">
+              <label for="phone" class="popup__label-style">Phone Number</label>
+              <input
+                type="text"
+                id="phone-number"
+                name="phone-number"
+                class="popup__input-style"
+                placeholder="Phone Number..."
+              />
+            </div>
+            <div class="input">
+              <label for="type-for-volunteer" class="popup__label-style">Phone Number</label>
+              <input
+                type="text"
+                id="type-for-volunteer"
+                name="type-for-volunteer"
+                class="popup__input-style"
+                placeholder="Type for volunteer..."
+              />
+            </div>
+            <div class="input">
+              <label for="message" class="popup__label-style">Message</label>
+              <textarea id="message" name="message" rows="3" cols="60" class="input-message" placeholder="Your message ....">
+              
+              </textarea>
+            </div>
+            <button class="input-btn" method="POST">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="add-experience">
+      <div class="popup__content">
+        <div class="popup__left">
+          <h1 class="popup__header">Add an experience</h1>
+          <div class="header__underline"></div>
+          <form action="/action_page.php">
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              placeholder="none"
+              class="add-cv-input"
+            />
+            <div class="add-cv">
+              <div class="add-cv__title-box">
+                <img
+                  src="img/adding icon.svg"
+                  alt="add icon"
+                  class="add-cv-icon"
+                />
+                <h3 class="add-cv__title">add a cv</h3>
+              </div>
+            </div>
+          </form>
+          <div class="applying-for-job-illustration-box">
+            <img
+              src="img/adding-experience.svg"
+              alt="apply for job"
+              class="applying-for-job-illustration"
+            />
+          </div>
+        </div>
+        <div class="popup__right">
+          <a href="#tours_section" class="popup__closing">×</a>
+          <form>
+            <div class="input">
+              <label for="fullname" class="popup__label-style">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="popup__input-style"
+                placeholder="Full Name..."
+              />
+            </div>
+            <div class="input">
+              <label for="email" class="popup__label-style">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="popup__input-style"
+                placeholder="Email..."
+              />
+            </div>
+            <div class="input">
+              <label for="experience" class="popup__label-style">Experience Title</label>
+              <input
+                type="text"
+                id="experience"
+                name="experience"
+                class="popup__input-style"
+                placeholder="Experience title..."
+              />
+            </div>
+            <div class="input">
+              <label for="experience-description" class="popup__label-style">Experience description</label>
+              <textarea id="experience-description" name="experience-description" rows="3" cols="60" class="input-message" placeholder="Your experience ....">
+              
+              </textarea>
+            </div>
+            <div class="input">
+              <h2 class="input__options-header">DO YOU WANT TO DISPLAY NAME AND EMAIL ON TRUESCHO?</h2>
+              <div class="input-radio-buttons">
+                <div class="input__options">
+                  <input type="radio" id="yes" name="display-author-name" value="yes">
+                  <label for="yes" class="popup__label-style radio-label">Yes</label>
+                </div>
+                <div class="input__options">
+                  <input type="radio" id="no" name="display-author-name" value="no">
+                  <label for="no" class="popup__label-style radio-label">No</label>
+                </div>
+
+              </div>
+            </div>
+            <button class="input-btn" method="POST">Send Information  </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="promoted-post">
+      <div class="popup__content">
+        <div class="popup__left">
+          <h1 class="popup__header">Add an experience</h1>
+          <div class="header__underline"></div>
+          <form action="/action_page.php">
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              placeholder="none"
+              class="add-cv-input"
+            />
+            <div class="add-cv">
+              <div class="add-cv__title-box">
+                <img
+                  src="img/adding icon.svg"
+                  alt="add icon"
+                  class="add-cv-icon"
+                />
+                <h3 class="add-cv__title">add a picture</h3>
+              </div>
+            </div>
+            <div class="add-cv">
+              <div class="add-cv__title-box">
+                <img
+                  src="img/adding icon.svg"
+                  alt="add icon"
+                  class="add-cv-icon"
+                />
+                <h3 class="add-cv__title">add a payment proof</h3>
+              </div>
+            </div>
+          </form>
+          <div class="applying-for-job-illustration-box">
+            <img
+              src="img/promoted-post.svg"
+              alt="apply for job"
+              class="applying-for-job-illustration"
+            />
+          </div>
+        </div>
+        <div class="popup__right">
+          <a href="#tours_section" class="popup__closing">×</a>
+          <form>
+            <div class="input ">
+              <label for="fullname" class="popup__label-style">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="popup__input-style"
+                placeholder="Full Name..."
+              />
+            </div>
+            <div class="input">
+              <label for="email" class="popup__label-style">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="popup__input-style"
+                placeholder="Email..."
+              />
+            </div>
+            <div class="input">
+              <label for="ad-post-title" class="popup__label-style">AD/POST TITLE</label>
+              <input
+                type="text"
+                id="ad-post-title"
+                name="ad-post-title"
+                class="popup__input-style"
+                placeholder="Add post title..."
+              />
+            </div>
+            <div class="input">
+              <label for="ad-post-title" class="popup__label-style">CLASSIFICATION/TYPE OF POST/AD</label>
+              <input
+                type="text"
+                id="classification"
+                name="classification"
+                class="popup__input-style"
+                placeholder="Type the classification..."
+              />
+            </div>
+            <div class="input">
+              <label for="experience-description" class="popup__label-style">AD/ POST DESCRIPTION</label>
+              <textarea id="ad-post-description" name="ad-post-description" rows="3" cols="60" class="input-message" placeholder="Your experience ....">
+              </textarea>
+            </div>
+            <div class="input">
+              <h2 class="input__options-header">DO YOU WANT TO DISPLAY NAME AND EMAIL ON TRUESCHO?</h2>
+              <div class="input-radio-buttons">
+                <div class="input__options">
+                  <input type="radio" id="yes" name="display-author-name" value="yes">
+                  <label for="yes" class="popup__label-style radio-label">Yes</label>
+                </div>
+                <div class="input__options">
+                  <input type="radio" id="no" name="display-author-name" value="no">
+                  <label for="no" class="popup__label-style radio-label">No</label>
+                </div>
+
+              </div>
+            </div>
+            <div class="input u-margin-bottom-xsmall">
+              <input type="checkbox" id="agree" name="agree" value="agree" class="input-checkbox">
+              <label for="vehicle1" class="popup__label-style "> I ACCEPT TERMS AND CONDITIONS FOR PUBLISHING AND ADDING PROMOTED PSOTS</label>
+            </div>
+            <button class="input-btn" method="POST">Send Information  </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!-- DESIGN IN JS -->
