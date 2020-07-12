@@ -1522,6 +1522,12 @@ h1 {
         .newsletter-section .subscription-input__email-button:hover {
           background-color: #00A8CC; }
 
+.landing-section__info-buttons-section {
+  display: flex;
+  justify-content: end !important;
+  margin-top: 4rem;
+  margin-left: 35rem !important; }
+
 .best-scolarships-section-signed {
   width: 100%;
   min-height: 102.5rem;
