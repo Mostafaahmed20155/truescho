@@ -156,3 +156,70 @@
 .hr-width-fix {
     width: 10% !important;
 }
+
+.position-fix-left {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 80rem;
+    z-index: -1;
+}
+.position-fix-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80rem;
+    z-index: -1;
+}
+
+.sign-up-3 {
+    justify-content: flex-end !important;
+    &__centeral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .verification {
+        &-header {
+            font-size: 2.5rem;
+            font-weight: 500;
+            font-weight: inherit;
+            text-transform: uppercase;
+            color: black;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        &-paragraph {
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-weight: inherit;
+            text-transform: uppercase;
+            color: black;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+        }
+        &-phone-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-weight: inherit;
+            text-transform: uppercase;
+            color: black;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        &-input {
+            width: 80%;
+            border: 0.1rem solid #707070;
+            padding: 1.8rem;
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: inherit;
+        }
+    }
+    &__btn {
+        width: 80% !important;
+    }
+}
