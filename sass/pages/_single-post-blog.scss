@@ -343,3 +343,58 @@
 .blogs-detailed-results__pic {
   width: 35rem;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .blog-summary__info {
+    flex-direction: column;
+  }
+  .blog-summary__favourite {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  .blog-summary__picture {
+    width: 35rem;
+  }
+  .post-details {
+    padding: 2rem;
+  }
+  .comments-section__send-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comments-section .user-comment {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .comments-section .user-name {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem;
+  }
+  .blog-summary__picutre-box {
+    align-self: flex-start;
+  }
+  .related-topics__cards {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+}
+  .responsive {
+    width: 35rem !important;
+  }
+  .responsive-pic {
+    width: 28.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem;
+  }
+}

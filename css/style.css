@@ -751,12 +751,10 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 140rem;
-  position: relative; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .landing-section__info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 104rem;
     text-align: center; }
     .landing-section__info-examples {
@@ -904,7 +902,7 @@ a:hover {
 
 .options-section {
   width: 100%;
-  height: 104.8rem;
+  height: 100rem;
   background-color: #E8E8E8;
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
   background-image: url("/img/BG - Options Sections.png");
@@ -912,13 +910,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .options-section__cards-info {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    display: flex; }
   .options-section__card {
     width: 25.8rem;
     height: 30rem;
@@ -2256,6 +2253,56 @@ a:hover {
       background-color: #152850;
       color: #FFFFFF; }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .blog-section {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .blog-section__cards-info {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: 8rem; */
+    padding: 1rem;
+    /* margin-right: 8rem; */ }
+  .blog-section__card {
+    width: 42rem;
+    height: 17.5rem;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
+    padding: 3rem;
+    position: relative;
+    /* margin-right: 10.5rem; */
+    margin-top: 5.5rem; }
+  .blog-section .blog-section__pic {
+    width: 9.9rem; }
+  .best-organizations-section-signed__cards-info {
+    width: 100%;
+    min-height: 42.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 0; }
+  .best-organizations-section-signed__header {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-left: 4rem; } }
+
 .my-network-section {
   width: 100%;
   padding: 20rem 5rem 10rem 5rem;
@@ -2901,6 +2948,46 @@ a:hover {
 .blogs-detailed-results__pic {
   width: 35rem; }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .blog-summary__info {
+    flex-direction: column; }
+  .blog-summary__favourite {
+    justify-content: flex-start;
+    margin-top: 1rem; }
+  .blog-summary__picture {
+    width: 35rem; }
+  .post-details {
+    padding: 2rem; }
+  .comments-section__send-box {
+    flex-direction: column;
+    align-items: center; }
+  .comments-section .user-comment {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; }
+  .comments-section .user-name {
+    text-align: center;
+    margin-top: 3rem; }
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem; }
+  .blog-summary__picutre-box {
+    align-self: flex-start; }
+  .related-topics__cards {
+    display: flex;
+    width: inherit;
+    flex-direction: column; }
+  .responsive {
+    width: 35rem !important; }
+  .responsive-pic {
+    width: 28.5rem !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem; } }
+
 .post-details {
   width: 100%;
   display: flex;
@@ -2911,7 +2998,8 @@ a:hover {
     padding-top: 6rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 4rem; }
   .post-details__header {
     font-size: 2.3rem;
     font-weight: 600;
@@ -2941,7 +3029,7 @@ a:hover {
       padding: 1.4rem 4rem;
       border-radius: 0.5rem;
       box-shadow: 0 0 1rem rgba(97, 115, 255, 0.6);
-      transition: all .2s;
+      transition: all 0.2s;
       margin-bottom: 2rem; }
       .post-details__buttons .apply-thorough-truescho:hover {
         background-color: #152850; }
@@ -2952,12 +3040,12 @@ a:hover {
       font-family: inherit;
       color: #FFFFFF;
       text-transform: uppercase;
-      background-color: #A58EF5;
+      background-color: #a58ef5;
       padding: 1.5rem 6rem;
       border-radius: 0.5rem;
       box-shadow: 0 0 1rem rgba(97, 115, 255, 0.6);
       margin-bottom: 2rem;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .post-details__buttons .apply-now:hover {
         background-color: #152850; }
     .post-details__buttons .offical-website {
@@ -2967,11 +3055,11 @@ a:hover {
       font-family: inherit;
       color: #FFFFFF;
       text-transform: uppercase;
-      background-color: #3D455D;
+      background-color: #3d455d;
       padding: 1.5rem 6rem;
       border-radius: 0.5rem;
       box-shadow: 0 0 1rem rgba(97, 115, 255, 0.6);
-      transition: all .2s; }
+      transition: all 0.2s; }
       .post-details__buttons .offical-website:hover {
         background-color: #00A8CC; }
   .post-details__social-media {
@@ -2983,7 +3071,7 @@ a:hover {
       width: 5rem;
       height: 5rem; }
     .post-details__social-media .social-media__number {
-      color: #6B8585;
+      color: #6b8585;
       font-size: 1rem;
       font-weight: 400;
       font-family: inherit; }
@@ -3000,6 +3088,38 @@ a:hover {
       text-transform: uppercase;
       color: black;
       margin-bottom: 1rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .blog-summary__info {
+    flex-direction: column; }
+  .blog-summary__favourite {
+    justify-content: flex-start;
+    margin-top: 1rem; }
+  .blog-summary__picture {
+    width: 35rem; }
+  .post-details {
+    padding: 2rem; }
+  .comments-section__send-box {
+    flex-direction: column;
+    align-items: center; }
+  .comments-section .user-comment {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; }
+  .comments-section .user-name {
+    text-align: center;
+    margin-top: 3rem; }
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem; }
+  .blog-summary__picutre-box {
+    align-self: flex-start; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .comments-section__content-box {
+    width: 100%;
+    padding: 4rem; } }
 
 .organization-cover-pic-box {
   position: relative; }
@@ -3902,6 +4022,66 @@ a:hover {
     width: 93%; }
     .service .payment-submit-btn:hover {
       background-color: #152850; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .service-summary__info {
+    flex-direction: column;
+    width: 160rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .service-summary__picture {
+    width: 100%; }
+  .service-summary__picutre-box {
+    margin-top: 5rem; }
+  .service-details__content-box {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .service__right-panel {
+    padding: 5rem;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem; }
+  .payment-section {
+    width: 100%; }
+  .service__payment {
+    display: flex;
+    flex-direction: column; }
+  .service .extra-card-info {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    flex-direction: column; }
+  .service .payment-illustration {
+    display: none; }
+  .service .name-input {
+    width: auto; }
+  .service .small-inputs {
+    width: 100%; }
+  .service .payment-submit-btn {
+    padding: 1.3rem 3rem;
+    cursor: pointer;
+    margin-top: 4rem;
+    width: 100%; }
+  .service {
+    justify-content: center;
+    margin-top: 10rem;
+    align-items: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .service-details__content-box {
+    padding: 6rem; }
+  .service__right-panel {
+    width: 70rem; }
+  .service .payment-illustration {
+    display: none; }
+  .service .extra-card-info {
+    flex-direction: column; }
+  .service .small-inputs {
+    width: 100%; } }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.8);

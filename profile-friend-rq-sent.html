@@ -98,10 +98,9 @@
             </div>
             <div class="user-info__name dropbtn">Michelle</div>
             <div class="dropdown-content u-absolute-top">
-              <a href="#">Profile</a>
-              <a href="timeline.html">Timeline</a>
-              <a href="#">Favourites</a>
-              <a href="#">Log out</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
           </li>
           <li class="nav-bar__item">
@@ -109,6 +108,42 @@
           </li>
         </ul>
       </div>
+      <!-- Burger Side bar -->
+      <nav role="responsive-navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="home-page-signed.html"><li>Home</li></a>
+            <a href="my-network-org.html"><li>My network</li></a>
+            <a href="organizations-signed.html"><li>Organizations</li></a>
+            <a href="jobs-signed.html"><li>Jobs</li></a>
+            <a href="opportunities-signed.html"><li>Opportunities</li></a>
+            <a href="services-signed.html"><li>Services</li></a>
+            <a href="profile.html"><li>Profile</li></a>
+            <a href="home-page.html"><li>Log out</li></a>
+            
+          </ul>
+        </div>
+      </nav>
     </div>
     <div class="profile-container">
       <img

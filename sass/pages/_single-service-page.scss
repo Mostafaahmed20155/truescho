@@ -410,3 +410,84 @@
         }
     }
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .service-summary__info {
+    flex-direction: column;
+    width: 160rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-summary__picture{
+	width: 100%;
+}
+.service-summary__picutre-box {
+    margin-top: 5rem;
+}
+.service-details__content-box {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.service__right-panel {
+    padding: 5rem;
+    width: 100%;
+    flex-direction: column;
+  margin-top: 5rem;
+}
+.payment-section {
+	width: 100%;
+}
+.service__payment {
+    display: flex;
+    flex-direction: column;
+}
+.service .extra-card-info {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    flex-direction: column;
+}
+.service .payment-illustration {
+    display: none;
+}
+.service .name-input {
+  width: auto;
+}
+.service .small-inputs {
+  width: 100%;
+}
+.service .payment-submit-btn {
+  padding: 1.3rem 3rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  width: 100%;
+}
+.service {
+  justify-content: center;
+  margin-top: 10rem;
+  align-items: center;
+}
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .service-details__content-box {
+    padding: 6rem;
+}
+.service__right-panel {
+  width: 70rem;
+}
+.service .payment-illustration {
+  display: none;
+}
+.service .extra-card-info {
+  flex-direction: column;
+}
+.service .small-inputs {
+  width: 100%;  
+}
+}

@@ -8,12 +8,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140rem;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &__info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
         width: 104rem;
         text-align: center;
 
@@ -206,7 +204,7 @@
 
 .options-section {
     width: 100%;
-    height: 104.8rem;
+    height: 100rem;
     background-color: $color-tertiary-dark;
     clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
     background-image: url("/img/BG\ -\ Options\ Sections.png");
@@ -215,12 +213,11 @@
     background-size: 100%;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__cards-info {
         display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
     &__card {
         width: 25.8rem;

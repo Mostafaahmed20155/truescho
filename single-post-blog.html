@@ -25,7 +25,7 @@
       <div class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="home-page.html" class="nav-bar__item-nav ">Home</a>
+            <a href="home-page.html" class="nav-bar__item-nav">Home</a>
           </li>
           <li class="nav-bar__item">
             <a href="my-network.html" class="nav-bar__item-nav">My network</a>
@@ -42,7 +42,9 @@
             </div>
           </li>
           <li class="nav-bar__item dropdown">
-            <a href="services.html" class="nav-bar__item-nav dropbtn">Services</a>
+            <a href="services.html" class="nav-bar__item-nav dropbtn"
+              >Services</a
+            >
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -50,10 +52,14 @@
             </div>
           </li>
           <li class="nav-bar__item">
-            <a href="organizations.html" class="nav-bar__item-nav ">Organizations</a>
+            <a href="organizations.html" class="nav-bar__item-nav"
+              >Organizations</a
+            >
           </li>
           <li class="nav-bar__item dropdown">
-            <a href="organizations.html" class="nav-bar__item-nav dropbtn">Opportunities</a>
+            <a href="organizations.html" class="nav-bar__item-nav dropbtn"
+              >Opportunities</a
+            >
             <div class="dropdown-content">
               <a href="#">Bachelor scholarships</a>
               <a href="#">Masters scholarships</a>
@@ -67,20 +73,28 @@
             </div>
           </li>
           <li class="nav-bar__item">
-             <div class="messages-icon-box">
-                 <img src="img/messages-icon.svg" alt="messages" class="messages-icon">
-                 <span class="messages-number">1</span>
-             </div>
+            <div class="messages-icon-box">
+              <img
+                src="img/messages-icon.svg"
+                alt="messages"
+                class="messages-icon"
+              />
+              <span class="messages-number">1</span>
+            </div>
           </li>
           <li class="nav-bar__item dropdown">
-             <div class="notification-icon-box">
-                 <img src="img/notification-icon.svg" alt="notification" class="notification-icon">
-                 <span class="notification-number">3</span>
-             </div>
+            <div class="notification-icon-box">
+              <img
+                src="img/notification-icon.svg"
+                alt="notification"
+                class="notification-icon"
+              />
+              <span class="notification-number">3</span>
+            </div>
           </li>
           <li class="nav-bar__item user-info dropdown">
             <div class="user-pic-box">
-                <img src="img/user-pic.png" alt="user pic" class="user-pic">
+              <img src="img/user-pic.png" alt="user pic" class="user-pic" />
             </div>
             <div class="user-info__name dropbtn">Michelle</div>
             <div class="dropdown-content u-absolute-top">
@@ -94,7 +108,43 @@
           </li>
         </ul>
       </div>
-  </div>
+      <!-- Burger Side bar -->
+      <nav role="responsive-navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="home-page-signed.html"><li>Home</li></a>
+            <a href="my-network-org.html"><li>My network</li></a>
+            <a href="organizations-signed.html"><li>Organizations</li></a>
+            <a href="jobs-signed.html"><li>Jobs</li></a>
+            <a href="opportunities-signed.html"><li>Opportunities</li></a>
+            <a href="services-signed.html"><li>Services</li></a>
+            <a href="profile.html"><li>Profile</li></a>
+            <a href="home-page.html"><li>Log out</li></a>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="blog-summary">
       <div class="blog-summary__info">
         <div class="blog-summary__details">
@@ -326,12 +376,12 @@
         </div>
         <h1 class="related-topics__header">Related Topics</h1>
         <div class="related-topics__cards">
-            <div class="blogs-detailed-results__card">
+            <div class="blogs-detailed-results__card responsive">
                 <div class="blogs-detailed-results__pic-box">
                   <img
                     src="img/education.svg"
                     alt="blogs pic"
-                    class="blogs-detailed-results__pic"
+                    class="blogs-detailed-results__pic responsive-pic"
                   />
                 </div>
                 <div class="blogs-card-content">
@@ -347,12 +397,12 @@
                 </div>
                 <a href="#" class="blogs-detailed-results__btn">view</a>
             </div>
-            <div class="blogs-detailed-results__card">
+            <div class="blogs-detailed-results__card responsive">
                 <div class="blogs-detailed-results__pic-box">
                   <img
                     src="img/education.svg"
                     alt="blogs pic"
-                    class="blogs-detailed-results__pic"
+                    class="blogs-detailed-results__pic responsive-pic"
                   />
                 </div>
                 <div class="blogs-card-content">
@@ -368,12 +418,12 @@
                 </div>
                 <a href="#" class="blogs-detailed-results__btn">view</a>
             </div>
-            <div class="blogs-detailed-results__card">
+            <div class="blogs-detailed-results__card responsive">
                 <div class="blogs-detailed-results__pic-box">
                   <img
                     src="img/education.svg"
                     alt="blogs pic"
-                    class="blogs-detailed-results__pic"
+                    class="blogs-detailed-results__pic responsive-pic"
                   />
                 </div>
                 <div class="blogs-card-content">
