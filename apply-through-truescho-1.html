@@ -25,7 +25,7 @@
       <div class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="home-page.html" class="nav-bar__item-nav ">Home</a>
+            <a href="home-page.html" class="nav-bar__item-nav">Home</a>
           </li>
           <li class="nav-bar__item">
             <a href="my-network.html" class="nav-bar__item-nav">My network</a>
@@ -42,7 +42,9 @@
             </div>
           </li>
           <li class="nav-bar__item dropdown">
-            <a href="services.html" class="nav-bar__item-nav dropbtn">Services</a>
+            <a href="services.html" class="nav-bar__item-nav dropbtn"
+              >Services</a
+            >
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -50,10 +52,14 @@
             </div>
           </li>
           <li class="nav-bar__item">
-            <a href="organizations.html" class="nav-bar__item-nav ">Organizations</a>
+            <a href="organizations.html" class="nav-bar__item-nav"
+              >Organizations</a
+            >
           </li>
           <li class="nav-bar__item dropdown">
-            <a href="organizations.html" class="nav-bar__item-nav dropbtn">Opportunities</a>
+            <a href="organizations.html" class="nav-bar__item-nav dropbtn"
+              >Opportunities</a
+            >
             <div class="dropdown-content">
               <a href="#">Bachelor scholarships</a>
               <a href="#">Masters scholarships</a>
@@ -67,20 +73,28 @@
             </div>
           </li>
           <li class="nav-bar__item">
-             <div class="messages-icon-box">
-                 <img src="img/messages-icon.svg" alt="messages" class="messages-icon">
-                 <span class="messages-number">1</span>
-             </div>
+            <div class="messages-icon-box">
+              <img
+                src="img/messages-icon.svg"
+                alt="messages"
+                class="messages-icon"
+              />
+              <span class="messages-number">1</span>
+            </div>
           </li>
           <li class="nav-bar__item dropdown">
-             <div class="notification-icon-box">
-                 <img src="img/notification-icon.svg" alt="notification" class="notification-icon">
-                 <span class="notification-number">3</span>
-             </div>
+            <div class="notification-icon-box">
+              <img
+                src="img/notification-icon.svg"
+                alt="notification"
+                class="notification-icon"
+              />
+              <span class="notification-number">3</span>
+            </div>
           </li>
           <li class="nav-bar__item user-info dropdown">
             <div class="user-pic-box">
-                <img src="img/user-pic.png" alt="user pic" class="user-pic">
+              <img src="img/user-pic.png" alt="user pic" class="user-pic" />
             </div>
             <div class="user-info__name dropbtn">Michelle</div>
             <div class="dropdown-content u-absolute-top">
@@ -94,7 +108,41 @@
           </li>
         </ul>
       </div>
-  </div>
+      <!-- Burger Side bar -->
+      <nav role="responsive-navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"
+              ><li>Show me more</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
     <div class="apply-container-bg">
       <div class="apply-illustration-box">
         <img
@@ -108,7 +156,9 @@
 
       <form class="apply-content-box">
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
-          <label for="Scholarship name" class="popup__label-style">Scholarship name</label>
+          <label for="Scholarship name" class="popup__label-style"
+            >Scholarship name</label
+          >
           <input
             type="text"
             id="fullname"
@@ -118,27 +168,27 @@
           />
         </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
-            <label for="ad-post-title" class="popup__label-style"
-              >Full name</label
-            >
-            <input
-              type="text"
-              id="ad-post-title"
-              name="ad-post-title"
-              class="popup__input-style"
-              placeholder="Full name..."
-            />
+          <label for="ad-post-title" class="popup__label-style"
+            >Full name</label
+          >
+          <input
+            type="text"
+            id="ad-post-title"
+            name="ad-post-title"
+            class="popup__input-style"
+            placeholder="Full name..."
+          />
         </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
-            <label for="fullname" class="popup__label-style">Nationality</label>
-            <input
-              type="text"
-              id="fullname"
-              name="fullname"
-              class="popup__input-style"
-              placeholder="Nationality..."
-            />
-          </div>
+          <label for="fullname" class="popup__label-style">Nationality</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            class="popup__input-style"
+            placeholder="Nationality..."
+          />
+        </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
           <label for="email" class="popup__label-style">Email</label>
           <input
@@ -150,7 +200,9 @@
           />
         </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
-          <label for="phone-number" class="popup__label-style">Phone number</label>
+          <label for="phone-number" class="popup__label-style"
+            >Phone number</label
+          >
           <input
             type="text"
             id="phone-number"
@@ -173,8 +225,7 @@
         </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
           <label for="father-status" class="popup__label-style"
-            >is the FATHER still alive? if yes, what does he 
-            work?</label
+            >is the FATHER still alive? if yes, what does he work?</label
           >
           <input
             type="text"
@@ -186,8 +237,7 @@
         </div>
         <div class="input u-margin-bottom-xsmall u-margin-right-large">
           <label for="mother-status" class="popup__label-style"
-            >is the MOTHER still alive? if yes, what does he 
-            work?</label
+            >is the MOTHER still alive? if yes, what does he work?</label
           >
           <input
             type="text"
@@ -209,16 +259,20 @@
             placeholder="Please enter the number of your siblings..."
           />
         </div>
-        <div class="input u-margin-bottom-xsmall u-margin-right-large flex-coloum">
+        <div
+          class="input u-margin-bottom-xsmall u-margin-right-large flex-coloum"
+        >
           <label for="scientifc-degree" class="popup__label-style"
-            >WHAT IS THE SCIENTIFIC DEGREE THAT YOU ARE
-            APPLYING FOR?</label>
-          <button class="scientific-selection"> Bachelor Degree</button>
-          <button class="scientific-selection"> Masters Degree</button>
-          <button class="scientific-selection"> Phd Degree</button>
+            >WHAT IS THE SCIENTIFIC DEGREE THAT YOU ARE APPLYING FOR?</label
+          >
+          <button class="scientific-selection">Bachelor Degree</button>
+          <button class="scientific-selection">Masters Degree</button>
+          <button class="scientific-selection">Phd Degree</button>
         </div>
       </form>
-      <a href="apply-through-truescho-2.html" class="continue-btn">Press to continue</a>
+      <a href="apply-through-truescho-2.html" class="continue-btn"
+        >Press to continue</a
+      >
     </div>
   </body>
 </html>

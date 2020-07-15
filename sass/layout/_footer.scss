@@ -1,56 +1,66 @@
 .footer {
-    width: 100%;
-    padding: 10rem 5rem 5rem 5rem;
-    background-color: $color-tertiary-light;
+  width: 100%;
+  padding: 10rem 5rem 5rem 5rem;
+  background-color: $color-tertiary-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content-box {
+    width: 160rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    &__content-box {
-        width: 160rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    &__info{
-        width: 26%;
-        // &:not(:last-child) {
-        //     margin-right: 14rem;
-        // }
-        // margin-bottom: 5rem;
-        &-list {
-            list-style: none;
-            // width: 35rem;
-         &-item {
-            font-family: inherit;
-            font-weight: 500;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            &:not(:last-child) {
-                margin-bottom: 2.2rem;
-            }
-            & a {
-                text-decoration: none;
-                color: $color-primary;
-                transition: all .2s;
-                &:hover {
-                    color: $color-secondary
-                }
-
-            }
-         }   
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__info {
+    width: 26%;
+    // &:not(:last-child) {
+    //     margin-right: 14rem;
+    // }
+    // margin-bottom: 5rem;
+    &-list {
+      list-style: none;
+      // width: 35rem;
+      &-item {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        &:not(:last-child) {
+          margin-bottom: 2.2rem;
         }
+        & a {
+          text-decoration: none;
+          color: $color-primary;
+          transition: all 0.2s;
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
     }
-    .social-icons-wrap {
-        display: flex;
-        justify-content: space-between;
+  }
+  .social-icons-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright-symbol {
+    content: "\00A9";
+  }
+  .app-store-pic {
+    width: 50%;
+  }
+  .google-play-pic {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .footer {
+    &__content-box {
+      flex-direction: column;
     }
-    .copyright-symbol {
-        content: "\00A9";
+    &__info {
+      width: 100%;
     }
-    .app-store-pic{
-        width: 50%;
-    }
-    .google-play-pic{
-        width: 50%;
-    }
+  }
 }

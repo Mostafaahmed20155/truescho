@@ -73,3 +73,14 @@
         }
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    .pagination {
+        &__prev, &__next {
+            display: none;
+        }
+        &__right-arrow, &__left-arrow {
+            display: none;
+        }
+  }
+}
