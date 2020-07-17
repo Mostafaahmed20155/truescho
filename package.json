@@ -25,7 +25,6 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
-    "countup.js": "^2.0.5",
-    "swipejs": "^2.2.18"
+    "countup.js": "^2.0.5"
   }
 }

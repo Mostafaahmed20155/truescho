@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     &__info {
-        width: 104rem;
+        width: 54%;
         text-align: center;
 
         &-examples {
@@ -216,8 +216,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     &__cards-info {
         display: flex;
+        width: 68%;
+        justify-content: center;
     }
     &__card {
         width: 25.8rem;
@@ -264,32 +267,33 @@
     height: 108.5rem;
     background-color: $color-tertiary-light;
     margin-top: -21rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 30rem;
+        padding-top: 10rem;
     }
     &__cards-info {
-        width: 180rem;
-        height: 40.5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        min-height: 40.5rem;
         margin-top: 10rem;
         display: flex;
+        justify-content: center;
     }
     &__card {
         width: 38.8rem !important;
-        min-height: 40.7rem !important;
+        height: 42.7rem !important;
         background-color: $color-tertiary;
         box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
         border-radius: 2rem;
-        margin-right: 8rem;
+        margin-right: 5rem;
         &-header {
             font-size: 1.5rem;
             font-family: inherit;
@@ -346,7 +350,7 @@
         position: relative;
     }
     .card-picture {
-        width: 38.7rem;
+        width: 100%;
     }
     .opportunity-type-label {
         position: absolute;
@@ -361,11 +365,9 @@
         border-radius: 0 1.5rem 1.5rem 0;
     }
     .btn-view-more {
-        position: absolute;
-        top: 85%;
-        left: 45%;
         font-size: 1.5rem;
         font-weight: 600;
+        margin-top: 10rem;
         font-family: inherit;
         text-transform: uppercase;
         text-decoration: none;
@@ -386,30 +388,31 @@
     width: 100%;
     height: 87.5rem;
     // background-color: $color-tertiary-dark;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
     &__cards {
         &-info {
-            width: 180rem;
-            height: 40.5rem;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%;
+            min-height: 40.5rem;
             display: flex;
             margin-top: 6rem;
+            justify-content: center;
         }
     }
     &__card {
         width: 52.8rem !important ;
-        min-height: 40.7rem !important ;
+        height: 42.7rem !important ;
         background-color: $color-tertiary;
         box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
         border-radius: 2rem;
@@ -424,7 +427,7 @@
             color: $color-black;
         }
         .card-picture {
-            width: 52rem;
+            width: 100%;
         }
         &-paragraph {
             font-size: 1.1rem;
@@ -484,9 +487,6 @@
         border-radius: 0 1.5rem 1.5rem 0;
     }
     .btn-view-more {
-        position: absolute;
-        top: 80%;
-        left: 45%;
         font-size: 1.5rem;
         font-weight: 600;
         font-family: inherit;
@@ -498,6 +498,7 @@
         color: $color-tertiary;
         box-shadow: 0rem 0rem 1rem rgba($color: #C1BAAA, $alpha: 0.6);
         transition: all .2s;
+        margin-top: 8rem;
         &:hover {
             background-color: $color-primary;
             color: $color-tertiary;
@@ -509,7 +510,11 @@
     width: 100%;
     height: 87.5rem;
     background-color: $color-tertiary-dark;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
@@ -520,23 +525,22 @@
     }
     &__cards {
         &-info {
-            width: 180rem;
-            height: 42.5rem;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%;
+            min-height: 42.5rem;
             display: flex;
             margin-top: 6rem;
+            display: flex;
+            justify-content: center;
         }
     }
     &__card {
         width: 38.8rem !important;
-        min-height: 40.7rem !important;
+        height: 43.7rem !important;
         background-color: $color-tertiary;
         box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
         border-radius: 2rem;
         margin-right: 8rem;
+        position: relative;
         &-header {
             font-size: 1.5rem;
             font-family: inherit;
@@ -546,7 +550,7 @@
             color: $color-black;
         }
         .card-picture {
-            width: 38rem;
+            width: 100%;
         }
         &-paragraph {
             font-size: 1.1rem;
@@ -606,9 +610,7 @@
         border-radius: 0 1.5rem 1.5rem 0;
     }
     .btn-view-more {
-        position: absolute;
-        top: 80%;
-        left: 45%;
+        margin-top: 10rem;
         font-size: 1.5rem;
         font-weight: 600;
         font-family: inherit;
@@ -631,25 +633,26 @@
     width: 100%;
     height: 87.5rem;
     // background-color: $color-tertiary-dark;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
     &__cards {
         &-info {
-            width: 180rem;
+            width: 100%;
             height: 42.5rem;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             display: flex;
             margin-top: 10rem;
+            justify-content: center;
         }
     }
     &__card {
@@ -717,9 +720,7 @@
     }
 
     .btn-view-more {
-        position: absolute;
-        top: 80%;
-        left: 45%;
+        margin-top: 5rem;
         font-size: 1.5rem;
         font-weight: 600;
         font-family: inherit;
@@ -742,24 +743,25 @@
     width: 100%;
     height: 87.5rem;
     background-color: $color-tertiary-dark;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 10rem;
+        padding-bottom: 5rem;
     }
     &__content-box{
-        display: flex;
         align-items: center;
-        width: 150rem;
+        width: 100%;
         min-height: 52rem;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -60%);
+        display: flex;
+        justify-content: center;
         .subscriptions-card {
             width: 40rem;
             height: 51.7rem;
@@ -814,26 +816,25 @@
 
 .sign-up-section {
     width: 100%;
-    height: 87.5rem;
-    position: relative;
+    min-height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
     &__content-box {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 150rem;
+        width: 100%;
         min-height: 52rem;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -60%);
     }
     .sign-up-as-a-person{
         width: 40rem;
@@ -896,15 +897,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // flex-wrap: wrap;
     &__card {
-        width: 6rem;
-        height: 21rem;
+        width: 100%;
+        min-height: 21rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        &:not(:last-child) {
-            margin-right: 40rem;
-        }
+        // &:not(:last-child) {
+        //     margin-right: 40rem;
+        // }
         &-header {
             font-size: 2.3rem;
             font-weight: 500;
@@ -928,20 +930,22 @@
     width: 100%;
     height: 80rem;
     background-color: $color-tertiary-light;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 0;
+    margin-top: -23rem;
+    flex-wrap: wrap;
     &__content-box {
-        width: 150rem;
-        height: 30rem;
+        width: 100%;
+        min-height: 30rem;
         // background-color: orangered;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
     }
     &__header {
         text-align: center;
-        padding-top: 10rem;
+        padding-top: 12rem;
+        padding-bottom: 7rem;
         color: $color-secondary;
         text-transform: uppercase;
         font-family: inherit;
@@ -997,9 +1001,7 @@
 
     }
     .btn-read-more {
-        position: absolute;
-        top: 80%;
-        left: 45%;
+        margin-top: 5rem;
         font-size: 1.5rem;
         font-weight: 600;
         font-family: inherit;
@@ -1023,24 +1025,28 @@
     width: 100%;
     height: 60rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     &__header {
         color: $color-black;
         text-align: center;
         text-transform: uppercase;
         font-family: inherit;
         font-weight: 600;
-        padding-top: 10rem;
+        // padding-top: 10rem;
         // align-self: start;
     }
     &__content-box {
         display: flex;
         align-items: center;
-        width: 150rem;
-        min-height: 40rem;
-        margin-top: 10rem;
+        width: 100%;
+        // min-height: 40rem;
+        // margin-top: 10rem;
+        &-org-logo {
+            // width: 80%;
+        }
     }
 
 }
@@ -1049,7 +1055,11 @@
     width: 100%;
     height: 62.3rem;
     background-color: $color-tertiary-dark;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // flex-wrap: wrap;
     &__header {
         color: #717E7E;
         text-align: center;
@@ -1062,12 +1072,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 150rem;
+        width: 100%;
         min-height: 52rem;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -60%);
     }
     .social-media{
         &__card {
@@ -1096,10 +1102,13 @@
     }
 }
 
-.newsletter-section {
+.newsletter-section {   
     width: 100%;
     height: 60rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__header {
         color: $color-black;
         text-align: center;
@@ -1111,14 +1120,12 @@
     &__content-box {
         display: flex;
         align-items: center;
-        width: 150rem;
+        width: 100%;
         min-height: 40rem;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -40%);
-        margin-top: 15rem;
-        margin-bottom: 15rem    ;
+        display: flex;
+        justify-content: space-around;
+        // margin-top: 15rem;
+        // margin-bottom: 15rem    ;
     }
     &__illustration {
         width: 45rem;
@@ -1129,7 +1136,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: auto;
+        // margin-left: auto;
         &__paragraph {
             font-family: inherit;
             font-weight: 400;

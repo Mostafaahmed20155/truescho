@@ -755,7 +755,7 @@ a:hover {
   align-items: center;
   justify-content: center; }
   .landing-section__info {
-    width: 104rem;
+    width: 54%;
     text-align: center; }
     .landing-section__info-examples {
       width: 100%;
@@ -913,9 +913,12 @@ a:hover {
   z-index: 1;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .options-section__cards-info {
-    display: flex; }
+    display: flex;
+    width: 68%;
+    justify-content: center; }
   .options-section__card {
     width: 25.8rem;
     height: 30rem;
@@ -953,30 +956,31 @@ a:hover {
   height: 108.5rem;
   background-color: #F7F7F7;
   margin-top: -21rem;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
   .best-scolarships-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 600;
-    padding-top: 30rem; }
+    padding-top: 10rem; }
   .best-scolarships-section__cards-info {
-    width: 180rem;
-    height: 40.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 40.5rem;
     margin-top: 10rem;
-    display: flex; }
+    display: flex;
+    justify-content: center; }
   .best-scolarships-section__card {
     width: 38.8rem !important;
-    min-height: 40.7rem !important;
+    height: 42.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
-    margin-right: 8rem; }
+    margin-right: 5rem; }
     .best-scolarships-section__card-header {
       font-size: 1.5rem;
       font-family: inherit;
@@ -1023,7 +1027,7 @@ a:hover {
   .best-scolarships-section .card-picture-box {
     position: relative; }
   .best-scolarships-section .card-picture {
-    width: 38.7rem; }
+    width: 100%; }
   .best-scolarships-section .opportunity-type-label {
     position: absolute;
     left: 0;
@@ -1036,11 +1040,9 @@ a:hover {
     padding: 0.9rem 2.7rem;
     border-radius: 0 1.5rem 1.5rem 0; }
   .best-scolarships-section .btn-view-more {
-    position: absolute;
-    top: 85%;
-    left: 45%;
     font-size: 1.5rem;
     font-weight: 600;
+    margin-top: 10rem;
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
@@ -1057,26 +1059,27 @@ a:hover {
 .best-jobs-section {
   width: 100%;
   height: 87.5rem;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
   .best-jobs-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 600;
-    padding-top: 10rem; }
+    padding-top: 5rem; }
   .best-jobs-section__cards-info {
-    width: 180rem;
-    height: 40.5rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 40.5rem;
     display: flex;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    justify-content: center; }
   .best-jobs-section__card {
     width: 52.8rem !important;
-    min-height: 40.7rem !important;
+    height: 42.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
@@ -1090,7 +1093,7 @@ a:hover {
       margin-left: 3rem;
       color: #000000; }
     .best-jobs-section__card .card-picture {
-      width: 52rem; }
+      width: 100%; }
     .best-jobs-section__card-paragraph {
       font-size: 1.1rem;
       font-family: inherit;
@@ -1140,9 +1143,6 @@ a:hover {
     padding: 0.9rem 2.7rem;
     border-radius: 0 1.5rem 1.5rem 0; }
   .best-jobs-section .btn-view-more {
-    position: absolute;
-    top: 80%;
-    left: 45%;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: inherit;
@@ -1153,7 +1153,8 @@ a:hover {
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(193, 186, 170, 0.6);
-    transition: all .2s; }
+    transition: all .2s;
+    margin-top: 8rem; }
     .best-jobs-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1162,7 +1163,11 @@ a:hover {
   width: 100%;
   height: 87.5rem;
   background-color: #E8E8E8;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
   .best-services-section__header {
     color: #000000;
     text-align: center;
@@ -1171,21 +1176,20 @@ a:hover {
     font-weight: 600;
     padding-top: 10rem; }
   .best-services-section__cards-info {
-    width: 180rem;
-    height: 42.5rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 42.5rem;
     display: flex;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center; }
   .best-services-section__card {
     width: 38.8rem !important;
-    min-height: 40.7rem !important;
+    height: 43.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
-    margin-right: 8rem; }
+    margin-right: 8rem;
+    position: relative; }
     .best-services-section__card-header {
       font-size: 1.5rem;
       font-family: inherit;
@@ -1194,7 +1198,7 @@ a:hover {
       margin-left: 3rem;
       color: #000000; }
     .best-services-section__card .card-picture {
-      width: 38rem; }
+      width: 100%; }
     .best-services-section__card-paragraph {
       font-size: 1.1rem;
       font-family: inherit;
@@ -1244,9 +1248,7 @@ a:hover {
     padding: 0.9rem 2.7rem;
     border-radius: 0 1.5rem 1.5rem 0; }
   .best-services-section .btn-view-more {
-    position: absolute;
-    top: 80%;
-    left: 45%;
+    margin-top: 10rem;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: inherit;
@@ -1265,23 +1267,24 @@ a:hover {
 .best-organizations-section {
   width: 100%;
   height: 87.5rem;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
   .best-organizations-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 600;
-    padding-top: 10rem; }
+    padding-top: 5rem; }
   .best-organizations-section__cards-info {
-    width: 180rem;
+    width: 100%;
     height: 42.5rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    margin-top: 10rem; }
+    margin-top: 10rem;
+    justify-content: center; }
   .best-organizations-section__card {
     width: 28.3rem !important;
     height: 36.5rem !important;
@@ -1338,9 +1341,7 @@ a:hover {
     .best-organizations-section__btn-follow:hover {
       background-color: #152850; }
   .best-organizations-section .btn-view-more {
-    position: absolute;
-    top: 80%;
-    left: 45%;
+    margin-top: 5rem;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: inherit;
@@ -1360,23 +1361,24 @@ a:hover {
   width: 100%;
   height: 87.5rem;
   background-color: #E8E8E8;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
   .subscriptions-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 600;
-    padding-top: 10rem; }
+    padding-bottom: 5rem; }
   .subscriptions-section__content-box {
-    display: flex;
     align-items: center;
-    width: 150rem;
+    width: 100%;
     min-height: 52rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -60%); }
+    display: flex;
+    justify-content: center; }
     .subscriptions-section__content-box .subscriptions-card {
       width: 40rem;
       height: 51.7rem;
@@ -1423,25 +1425,24 @@ a:hover {
 
 .sign-up-section {
   width: 100%;
-  height: 87.5rem;
-  position: relative; }
+  min-height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   .sign-up-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 600;
-    padding-top: 10rem; }
+    padding-top: 5rem; }
   .sign-up-section__content-box {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 150rem;
-    min-height: 52rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -60%); }
+    width: 100%;
+    min-height: 52rem; }
   .sign-up-section .sign-up-as-a-person {
     width: 40rem;
     min-height: 40rem;
@@ -1497,13 +1498,11 @@ a:hover {
   justify-content: center;
   align-items: center; }
   .stats-section__card {
-    width: 6rem;
-    height: 21rem;
+    width: 100%;
+    min-height: 21rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .stats-section__card:not(:last-child) {
-      margin-right: 40rem; }
     .stats-section__card-header {
       font-size: 2.3rem;
       font-weight: 500;
@@ -1523,18 +1522,20 @@ a:hover {
   width: 100%;
   height: 80rem;
   background-color: #F7F7F7;
-  position: relative;
-  z-index: 0; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  margin-top: -23rem;
+  flex-wrap: wrap; }
   .testmonials-section__content-box {
-    width: 150rem;
-    height: 30rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    width: 100%;
+    min-height: 30rem; }
   .testmonials-section__header {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 7rem;
     color: #00A8CC;
     text-transform: uppercase;
     font-family: inherit;
@@ -1581,9 +1582,7 @@ a:hover {
       color: #000000;
       margin-left: 2.5rem; }
   .testmonials-section .btn-read-more {
-    position: absolute;
-    top: 80%;
-    left: 45%;
+    margin-top: 5rem;
     font-size: 1.5rem;
     font-weight: 600;
     font-family: inherit;
@@ -1603,28 +1602,29 @@ a:hover {
   width: 100%;
   height: 60rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: wrap; }
   .partners-section__header {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
-    font-weight: 600;
-    padding-top: 10rem; }
+    font-weight: 600; }
   .partners-section__content-box {
     display: flex;
     align-items: center;
-    width: 150rem;
-    min-height: 40rem;
-    margin-top: 10rem; }
+    width: 100%; }
 
 .social-media-section {
   width: 100%;
   height: 62.3rem;
   background-color: #E8E8E8;
-  position: relative; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
   .social-media-section__header {
     color: #717E7E;
     text-align: center;
@@ -1636,12 +1636,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150rem;
-    min-height: 52rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -60%); }
+    width: 100%;
+    min-height: 52rem; }
   .social-media-section .social-media__card {
     display: flex;
     flex-direction: column;
@@ -1664,7 +1660,10 @@ a:hover {
 .newsletter-section {
   width: 100%;
   height: 60rem;
-  position: relative; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .newsletter-section__header {
     color: #000000;
     text-align: center;
@@ -1675,14 +1674,10 @@ a:hover {
   .newsletter-section__content-box {
     display: flex;
     align-items: center;
-    width: 150rem;
+    width: 100%;
     min-height: 40rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    margin-top: 15rem;
-    margin-bottom: 15rem; }
+    display: flex;
+    justify-content: space-around; }
   .newsletter-section__illustration {
     width: 45rem; }
   .newsletter-section .subscription-input {
@@ -1690,8 +1685,7 @@ a:hover {
     height: 50rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: auto; }
+    justify-content: center; }
     .newsletter-section .subscription-input__paragraph {
       font-family: inherit;
       font-weight: 400;
@@ -1811,13 +1805,13 @@ a:hover {
       margin-right: 4rem;
       margin-bottom: 2.2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-scolarships-section-signed__card .details-button:hover {
         background-color: #00A8CC; }
   .best-scolarships-section-signed .card-picture-box {
     position: relative; }
   .best-scolarships-section-signed .card-picture {
-    width: 38.7rem; }
+    width: 100%; }
   .best-scolarships-section-signed .opportunity-type-label {
     position: absolute;
     left: 0;
@@ -1841,7 +1835,7 @@ a:hover {
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-scolarships-section-signed .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1880,6 +1874,8 @@ a:hover {
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
     margin-right: 8rem; }
+    .best-jobs-section-signed__card .card-picture {
+      width: 100%; }
     .best-jobs-section-signed__card-header {
       font-size: 1.5rem;
       font-family: inherit;
@@ -1921,7 +1917,7 @@ a:hover {
       margin-right: 4rem;
       margin-bottom: 2.2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-jobs-section-signed__card .details-button:hover {
         background-color: #00A8CC; }
   .best-jobs-section-signed .opportunity-type-label {
@@ -1942,12 +1938,12 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #C1BAAA;
+    background-color: #c1baaa;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(193, 186, 170, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-jobs-section-signed .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1973,17 +1969,17 @@ a:hover {
     margin-left: 15rem; }
   .best-services-section-signed__cards-info {
     width: 180rem;
-    height: 42.5rem;
+    min-height: 42.5rem;
     display: flex;
     flex-wrap: wrap;
     margin-top: 6rem;
     padding-left: 10rem;
     padding-right: 10rem; }
   .best-services-section-signed .card-picture {
-    width: 38.7rem; }
+    width: 100%; }
   .best-services-section-signed__card {
     width: 38.8rem !important;
-    min-height: 40.7rem !important;
+    height: 43.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
@@ -2030,7 +2026,7 @@ a:hover {
       margin-right: 4rem;
       margin-bottom: 2.2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-services-section-signed__card .details-button:hover {
         background-color: #00A8CC; }
   .best-services-section-signed .opportunity-type-label {
@@ -2056,7 +2052,7 @@ a:hover {
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-services-section-signed .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -2099,13 +2095,13 @@ a:hover {
     .best-organizations-section-signed__card .colored-container {
       width: 100%;
       height: 13.7rem;
-      background-color: #AEC1B2;
+      background-color: #aec1b2;
       border-radius: 2rem 2rem 0 0; }
     .best-organizations-section-signed__card .logo-box {
       width: 17.9rem;
       height: 8.9rem;
       border-radius: 1.5rem;
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
       position: absolute;
       top: 25%;
       left: 18%;
@@ -2134,12 +2130,12 @@ a:hover {
     font-family: inherit;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #A5C4B6;
+    background-color: #a5c4b6;
     color: #FFFFFF;
     padding: 1rem 4.5rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(165, 196, 182, 0.5);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-organizations-section-signed__btn-follow:hover {
       background-color: #152850; }
   .best-organizations-section-signed .btn-view-more {
@@ -2149,12 +2145,12 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #B7BEAE;
+    background-color: #b7beae;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-organizations-section-signed .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -2229,7 +2225,7 @@ a:hover {
     font-family: inherit;
     background-color: #152850;
     padding: 0.5rem 3.2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     text-transform: uppercase;
     box-shadow: 0 0 1rem rgba(97, 115, 255, 0.6);
@@ -2243,65 +2239,15 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #B7BEAE;
+    background-color: #b7beae;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .blog-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .blog-section {
-    width: 100%;
-    height: auto;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    background-color: #E8E8E8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-  .blog-section__cards-info {
-    width: 100%;
-    min-height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-left: 8rem; */
-    padding: 1rem;
-    /* margin-right: 8rem; */ }
-  .blog-section__card {
-    width: 42rem;
-    height: 17.5rem;
-    display: flex;
-    background-color: #FFFFFF;
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
-    padding: 3rem;
-    position: relative;
-    /* margin-right: 10.5rem; */
-    margin-top: 5.5rem; }
-  .blog-section .blog-section__pic {
-    width: 9.9rem; }
-  .best-organizations-section-signed__cards-info {
-    width: 100%;
-    min-height: 42.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10rem;
-    padding-left: 5rem;
-    padding-right: 0; }
-  .best-organizations-section-signed__header {
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-weight: 600;
-    align-self: flex-start;
-    margin-left: 4rem; } }
 
 .my-network-section {
   width: 100%;
@@ -4946,7 +4892,9 @@ a:hover {
   height: 100%; }
 
 .swiper-wrapper {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
 
 .swiper-slide {
   width: 38.7rem; }
