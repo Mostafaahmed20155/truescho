@@ -33,6 +33,7 @@
         color: $color-primary;
         font-weight: 700;
         font-size: 1.3rem;
+        padding: 5.5rem 0;
         &:hover {
           color: $color-secondary;
           transition: all 0.2s;
@@ -75,6 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
     &__name {
       font-weight: 700;
       font-family: inherit;
@@ -251,7 +253,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   #menuToggle {
     display: none;
   }

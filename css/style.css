@@ -359,7 +359,8 @@ h1 {
       text-transform: uppercase;
       color: #152850;
       font-weight: 700;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      padding: 5.5rem 0; }
       .navigation .nav-bar__item-nav:hover {
         color: #00A8CC;
         transition: all 0.2s; }
@@ -525,7 +526,7 @@ a:hover {
   .nav-bar {
     display: none; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   #menuToggle {
     display: none; } }
 
@@ -536,7 +537,7 @@ a:hover {
 .footer {
   width: 100%;
   padding: 10rem 5rem 5rem 5rem;
-  background-color: #F7F7F7;
+  background-color: #DEF7F7;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -645,19 +646,31 @@ a:hover {
       margin-left: 3rem;
       padding-right: 11rem;
       color: #000000; }
-    .search-results__card-rating-box {
+    .search-results__card-deadline-box {
       display: flex;
-      align-items: baseline; }
-    .search-results__card-rating {
-      margin-top: 2rem;
+      align-items: center;
+      margin: 3rem 0; }
+    .search-results__card-deadline {
       margin-left: 3rem; }
-    .search-results__card .rating-number {
+    .search-results__card .deadline-number {
       font-size: 1.5rem;
       color: #000000;
       margin-left: 1.82rem;
       font-weight: 600;
       font-family: inherit;
       margin-right: auto; }
+    .search-results__card .deadline-header {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #000000;
+      text-transform: uppercase; }
+    .search-results__card .deadline-value {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase; }
     .search-results__card .details-button {
       font-size: 1.1rem;
       font-weight: 600;
@@ -668,9 +681,9 @@ a:hover {
       border-radius: 2rem;
       color: #FFFFFF;
       margin-right: 4rem;
-      margin-bottom: 2.2rem;
+      margin-left: 2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .search-results__card .details-button:hover {
         background-color: #00A8CC; }
   .search-results .opportunity-type-label {
@@ -767,11 +780,11 @@ a:hover {
         display: flex;
         justify-content: space-evenly;
         width: 16rem;
-        padding: .5rem 2rem .5rem 2rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
         border-radius: 1rem;
         background-color: white;
         border-style: solid;
-        border-width: .1rem;
+        border-width: 0.1rem;
         border-color: #FFFFFF; }
         .landing-section__info-examples-option .text-sample {
           font-size: 1.7rem;
@@ -816,12 +829,13 @@ a:hover {
         right: 1rem;
         width: 0;
         height: 0;
-        border: .4rem solid transparent;
+        border: 0.4rem solid transparent;
         border-color: #152850 transparent transparent transparent; }
       .landing-section__info-selections .select-selected.select-arrow-active:after {
         border-color: transparent transparent #fff transparent;
         top: 7px; }
-      .landing-section__info-selections .select-items div, .landing-section__info-selections .select-selected {
+      .landing-section__info-selections .select-items div,
+      .landing-section__info-selections .select-selected {
         color: #152850;
         padding: 1rem 8rem 1rem 1rem;
         border: 1px solid transparent;
@@ -837,7 +851,8 @@ a:hover {
         z-index: 99; }
       .landing-section__info-selections .select-hide {
         display: none; }
-      .landing-section__info-selections .select-items div:hover, .landing-section__info-selections .same-as-selected {
+      .landing-section__info-selections .select-items div:hover,
+      .landing-section__info-selections .same-as-selected {
         background-color: rgba(0, 0, 0, 0.1); }
       .landing-section__info-selections-label {
         display: block;
@@ -871,7 +886,7 @@ a:hover {
       .landing-section__info-buttons:not(:last-child) {
         margin-right: 2rem; }
       .landing-section__info-buttons:hover {
-        transition: all .2s;
+        transition: all 0.2s;
         transform: translateY(-0.5rem);
         box-shadow: 0rem 1rem 2rem rgba(21, 40, 80, 0.2); }
         .landing-section__info-buttons:hover::after {
@@ -926,7 +941,7 @@ a:hover {
     border-radius: 1.5rem;
     box-shadow: 0rem 0.3rem 4rem rgba(0, 0, 0, 0.16);
     text-align: center;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .options-section__card:not(:last-child) {
       margin-right: 5rem; }
     .options-section__card-icon-box {
@@ -976,7 +991,7 @@ a:hover {
     justify-content: center; }
   .best-scolarships-section__card {
     width: 38.8rem !important;
-    height: 42.7rem !important;
+    height: 45.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
@@ -996,19 +1011,31 @@ a:hover {
       margin-left: 3rem;
       padding-right: 11rem;
       color: #000000; }
-    .best-scolarships-section__card-rating-box {
+    .best-scolarships-section__card-deadline-box {
       display: flex;
-      align-items: baseline; }
-    .best-scolarships-section__card-rating {
-      margin-top: 2rem;
+      align-items: center;
+      margin: 3rem 0; }
+    .best-scolarships-section__card-deadline {
       margin-left: 3rem; }
-    .best-scolarships-section__card .rating-number {
+    .best-scolarships-section__card .deadline-number {
       font-size: 1.5rem;
       color: #000000;
       margin-left: 1.82rem;
       font-weight: 600;
       font-family: inherit;
       margin-right: auto; }
+    .best-scolarships-section__card .deadline-header {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #000000;
+      text-transform: uppercase; }
+    .best-scolarships-section__card .deadline-value {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase; }
     .best-scolarships-section__card .details-button {
       font-size: 1.1rem;
       font-weight: 600;
@@ -1019,9 +1046,9 @@ a:hover {
       border-radius: 2rem;
       color: #FFFFFF;
       margin-right: 4rem;
-      margin-bottom: 2.2rem;
+      margin-left: 2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-scolarships-section__card .details-button:hover {
         background-color: #00A8CC; }
   .best-scolarships-section .card-picture-box {
@@ -1051,7 +1078,7 @@ a:hover {
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-scolarships-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1103,19 +1130,31 @@ a:hover {
       padding-right: 11rem;
       color: #000000;
       margin-bottom: 2rem; }
-    .best-jobs-section__card-rating-box {
+    .best-jobs-section__card-deadline-box {
       display: flex;
-      align-items: baseline; }
-    .best-jobs-section__card-rating {
-      margin-top: 2rem;
+      align-items: center;
+      margin: 3rem 0; }
+    .best-jobs-section__card-deadline {
       margin-left: 3rem; }
-    .best-jobs-section__card .rating-number {
+    .best-jobs-section__card .deadline-number {
       font-size: 1.5rem;
       color: #000000;
       margin-left: 1.82rem;
       font-weight: 600;
       font-family: inherit;
       margin-right: auto; }
+    .best-jobs-section__card .deadline-header {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #000000;
+      text-transform: uppercase; }
+    .best-jobs-section__card .deadline-value {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase; }
     .best-jobs-section__card .details-button {
       font-size: 1.1rem;
       font-weight: 600;
@@ -1126,9 +1165,9 @@ a:hover {
       border-radius: 2rem;
       color: #FFFFFF;
       margin-right: 4rem;
-      margin-bottom: 2.2rem;
+      margin-left: 2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-jobs-section__card .details-button:hover {
         background-color: #00A8CC; }
   .best-jobs-section .opportunity-type-label {
@@ -1148,12 +1187,12 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #C1BAAA;
+    background-color: #c1baaa;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(193, 186, 170, 0.6);
-    transition: all .2s;
+    transition: all 0.2s;
     margin-top: 8rem; }
     .best-jobs-section .btn-view-more:hover {
       background-color: #152850;
@@ -1233,7 +1272,7 @@ a:hover {
       margin-right: 4rem;
       margin-bottom: 2.2rem;
       text-decoration: none;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .best-services-section__card .details-button:hover {
         background-color: #00A8CC; }
   .best-services-section .opportunity-type-label {
@@ -1259,7 +1298,7 @@ a:hover {
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-services-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1297,13 +1336,13 @@ a:hover {
     .best-organizations-section__card .colored-container {
       width: 100%;
       height: 13.7rem;
-      background-color: #AEC1B2;
+      background-color: #aec1b2;
       border-radius: 2rem 2rem 0 0; }
     .best-organizations-section__card .logo-box {
       width: 17.9rem;
       height: 8.9rem;
       border-radius: 1.5rem;
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
       position: absolute;
       top: 25%;
       left: 18%;
@@ -1332,12 +1371,12 @@ a:hover {
     font-family: inherit;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #A5C4B6;
+    background-color: #a5c4b6;
     color: #FFFFFF;
     padding: 1rem 4.5rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(165, 196, 182, 0.5);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-organizations-section__btn-follow:hover {
       background-color: #152850; }
   .best-organizations-section .btn-view-more {
@@ -1347,12 +1386,12 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #B7BEAE;
+    background-color: #b7beae;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .best-organizations-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1419,7 +1458,7 @@ a:hover {
         position: absolute;
         bottom: 3.6rem;
         right: 5rem;
-        transition: all .2s; }
+        transition: all 0.2s; }
         .subscriptions-section__content-box .subscriptions-card__button:hover {
           background-color: #152850; }
 
@@ -1461,7 +1500,7 @@ a:hover {
       color: #FFFFFF;
       position: absolute;
       bottom: 0;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .sign-up-section .sign-up-as-a-person__button:hover {
         background-color: #152850; }
   .sign-up-section .sign-up-as-an-org {
@@ -1482,7 +1521,7 @@ a:hover {
       color: #FFFFFF;
       position: absolute;
       bottom: 0;
-      transition: all .2s; }
+      transition: all 0.2s; }
       .sign-up-section .sign-up-as-an-org__button:hover {
         background-color: #00A8CC; }
 
@@ -1490,7 +1529,7 @@ a:hover {
   width: 100%;
   height: 90rem;
   clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
-  background-color: #00A8CC;
+  background-color: #00a8cc;
   display: flex;
   /* padding: 35rem 45rem; */
   z-index: 2000;
@@ -1588,12 +1627,12 @@ a:hover {
     font-family: inherit;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #B7BEAE;
+    background-color: #b7beae;
     padding: 2.5rem 6.5rem;
     border-radius: 5rem;
     color: #FFFFFF;
     box-shadow: 0rem 0rem 1rem rgba(0, 168, 204, 0.6);
-    transition: all .2s; }
+    transition: all 0.2s; }
     .testmonials-section .btn-read-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
@@ -1626,7 +1665,7 @@ a:hover {
   align-items: center;
   flex-direction: column; }
   .social-media-section__header {
-    color: #717E7E;
+    color: #717e7e;
     text-align: center;
     text-transform: uppercase;
     font-family: inherit;
@@ -1655,7 +1694,7 @@ a:hover {
       font-size: 2.5rem;
       font-family: inherit;
       font-weight: 500;
-      color: #6B8585; }
+      color: #6b8585; }
 
 .newsletter-section {
   width: 100%;
@@ -1724,7 +1763,7 @@ a:hover {
         padding: 2.71rem 4.3rem;
         cursor: pointer;
         border-radius: 0 4.8rem 4.8rem 0;
-        transition: all .2s; }
+        transition: all 0.2s; }
         .newsletter-section .subscription-input__email-button:hover {
           background-color: #00A8CC; }
 
@@ -1749,7 +1788,8 @@ a:hover {
     font-weight: 600;
     display: flex;
     align-self: flex-start;
-    margin-left: 15rem; }
+    margin-left: 15rem;
+    margin-top: 10rem; }
   .best-scolarships-section-signed__cards-info {
     width: 180rem;
     min-height: 40.5rem;
@@ -1760,7 +1800,7 @@ a:hover {
     flex-wrap: wrap; }
   .best-scolarships-section-signed__card {
     width: 38.8rem !important;
-    min-height: 40.7rem !important;
+    min-height: 41.7rem !important;
     background-color: #FFFFFF;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
     border-radius: 2rem;
@@ -1780,19 +1820,31 @@ a:hover {
       margin-left: 3rem;
       padding-right: 11rem;
       color: #000000; }
-    .best-scolarships-section-signed__card-rating-box {
+    .best-scolarships-section-signed__card-deadline-box {
       display: flex;
-      align-items: baseline; }
-    .best-scolarships-section-signed__card-rating {
-      margin-top: 2rem;
+      align-items: center;
+      margin: 3rem 0; }
+    .best-scolarships-section-signed__card-deadline {
       margin-left: 3rem; }
-    .best-scolarships-section-signed__card .rating-number {
+    .best-scolarships-section-signed__card .deadline-number {
       font-size: 1.5rem;
       color: #000000;
       margin-left: 1.82rem;
       font-weight: 600;
       font-family: inherit;
       margin-right: auto; }
+    .best-scolarships-section-signed__card .deadline-header {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #000000;
+      text-transform: uppercase; }
+    .best-scolarships-section-signed__card .deadline-value {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase; }
     .best-scolarships-section-signed__card .details-button {
       font-size: 1.1rem;
       font-weight: 600;
@@ -1803,7 +1855,7 @@ a:hover {
       border-radius: 2rem;
       color: #FFFFFF;
       margin-right: 4rem;
-      margin-bottom: 2.2rem;
+      margin-left: 2rem;
       text-decoration: none;
       transition: all 0.2s; }
       .best-scolarships-section-signed__card .details-button:hover {
@@ -1892,19 +1944,31 @@ a:hover {
       padding-right: 11rem;
       color: #000000;
       margin-bottom: 2rem; }
-    .best-jobs-section-signed__card-rating-box {
+    .best-jobs-section-signed__card-deadline-box {
       display: flex;
-      align-items: baseline; }
-    .best-jobs-section-signed__card-rating {
-      margin-top: 2rem;
+      align-items: center;
+      margin: 3rem 0; }
+    .best-jobs-section-signed__card-deadline {
       margin-left: 3rem; }
-    .best-jobs-section-signed__card .rating-number {
+    .best-jobs-section-signed__card .deadline-number {
       font-size: 1.5rem;
       color: #000000;
       margin-left: 1.82rem;
       font-weight: 600;
       font-family: inherit;
       margin-right: auto; }
+    .best-jobs-section-signed__card .deadline-header {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: #000000;
+      text-transform: uppercase; }
+    .best-jobs-section-signed__card .deadline-value {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #000000;
+      text-transform: uppercase; }
     .best-jobs-section-signed__card .details-button {
       font-size: 1.1rem;
       font-weight: 600;
@@ -1915,7 +1979,7 @@ a:hover {
       border-radius: 2rem;
       color: #FFFFFF;
       margin-right: 4rem;
-      margin-bottom: 2.2rem;
+      margin-left: 2rem;
       text-decoration: none;
       transition: all 0.2s; }
       .best-jobs-section-signed__card .details-button:hover {
@@ -2248,6 +2312,97 @@ a:hover {
     .blog-section .btn-view-more:hover {
       background-color: #152850;
       color: #FFFFFF; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .blog-section {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .blog-section__cards-info {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: 8rem; */
+    padding: 1rem;
+    /* margin-right: 8rem; */ }
+  .blog-section__card {
+    width: 42rem;
+    height: 17.5rem;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.16);
+    padding: 3rem;
+    position: relative;
+    /* margin-right: 10.5rem; */
+    margin-top: 5.5rem; }
+  .blog-section .blog-section__pic {
+    width: 9.9rem; }
+  .best-organizations-section-signed__cards-info {
+    width: 100%;
+    min-height: 42.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    padding-left: 5rem;
+    padding-right: 0; }
+  .best-organizations-section-signed__header {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-left: 4rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .best-scolarships-section-signed__cards-info {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .best-scolarships-section-signed__header {
+    margin-left: 2rem; }
+  .best-scolarships-section-signed__card {
+    margin-right: 3rem; }
+  .best-jobs-section-signed__header {
+    margin-left: 2rem; }
+  .best-jobs-section-signed__cards-info {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .best-jobs-section-signed__card {
+    margin-right: 0;
+    width: 38.7rem !important; }
+  .best-services-section-signed__header {
+    margin-left: 2rem; }
+  .best-services-section-signed__cards-info {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .best-services-section-signed__card {
+    margin-right: 0; }
+  .best-organizations-section-signed__header {
+    margin-left: 2rem; }
+  .best-organizations-section-signed__cards-info {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem; }
+  .best-organizations-section-signed__card {
+    margin-right: 0; }
+  .best-jobs-section-signed .card-picture {
+    width: 100%; }
+  .blog-section__card {
+    margin-right: 2rem; }
+  .blog-section__cards-info {
+    width: 100%; } }
 
 .my-network-section {
   width: 100%;
@@ -4886,6 +5041,553 @@ a:hover {
   border-radius: 1rem;
   background-color: black;
   margin: 1.5rem 0; }
+
+.page-not-found-container {
+  width: 100%;
+  height: 90rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.pnf {
+  width: 60%;
+  min-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.pnf-illustration {
+  width: 40%;
+  margin-bottom: 2rem; }
+
+.pnf-header {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 2rem; }
+
+.pnf-sub-header {
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 4rem; }
+
+.search-form {
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.pnf-search-input {
+  width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 1.5rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1); }
+  .pnf-search-input:focus {
+    outline: none; }
+
+.search-btn {
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 2rem 5rem;
+  color: white;
+  border-radius: 3rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: #00A8CC;
+  box-shadow: 0 0 3rem rgba(108, 99, 255, 0.3);
+  transition: all .2s;
+  cursor: pointer;
+  margin-left: 4rem; }
+  .search-btn:focus {
+    box-shadow: 0 1rem 3rem rgba(108, 99, 255, 0.7);
+    outline: none; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .pnf-illustration {
+    width: 75%; }
+  .search-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .pnf-search-input {
+    width: 100%; }
+  .search-btn {
+    margin-left: 0;
+    margin-top: 3rem; } }
+
+.contact-us-section {
+  width: 100%;
+  padding: 20rem 5rem 10rem 5rem;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 30rem; }
+  .contact-us-section__header {
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 3rem;
+    color: #152850;
+    text-transform: uppercase; }
+  .contact-us-section__sub-header {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 2.9rem;
+    color: #152850;
+    text-transform: uppercase; }
+  .contact-us-section__paragraph {
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #152850;
+    margin-top: 6.5rem; }
+  .contact-us-section__info {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contact-us-section__illustration {
+    width: 30%;
+    margin-left: auto; }
+
+.contact-us-form {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .contact-us-form__container {
+    width: 120rem;
+    min-height: 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem; }
+    .contact-us-form__container-left {
+      width: 60%;
+      min-height: 50rem;
+      border-radius: 0 1rem 1rem 0;
+      padding: 8rem; }
+      .contact-us-form__container-left .left-header {
+        font-size: 2.3rem;
+        font-weight: 600;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: #00A8CC;
+        margin-bottom: 4rem; }
+      .contact-us-form__container-left form {
+        width: 100%; }
+        .contact-us-form__container-left form input,
+        .contact-us-form__container-left form textarea {
+          width: 100%;
+          padding: 1.5rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-family: inherit;
+          border-radius: 1rem;
+          border: 0.09rem solid #707070;
+          opacity: 0.5; }
+        .contact-us-form__container-left form label {
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-family: inherit; }
+        .contact-us-form__container-left form .send-now-btn {
+          background-color: #152850;
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: inherit;
+          padding: 2rem 6rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 3rem rgba(21, 40, 80, 0.28);
+          color: #FFFFFF;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.2s; }
+          .contact-us-form__container-left form .send-now-btn:hover {
+            background-color: #00A8CC; }
+          .contact-us-form__container-left form .send-now-btn:focus {
+            box-shadow: 0 1 3rem rgba(21, 40, 80, 0.6); }
+      .contact-us-form__container-left .input-field {
+        margin-bottom: 3rem; }
+    .contact-us-form__container-right {
+      width: 40%;
+      min-height: 90rem;
+      border-radius: 0 1rem 1rem 0;
+      background-color: #00A8CC;
+      padding: 8rem;
+      padding-right: 4rem;
+      padding-right: 4rem;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column; }
+      .contact-us-form__container-right .right-header {
+        font-size: 2.3rem;
+        font-weight: 600;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 4rem; }
+      .contact-us-form__container-right .contact-info {
+        display: flex; }
+        .contact-us-form__container-right .contact-info:not(:last-child) {
+          margin-bottom: 4rem; }
+        .contact-us-form__container-right .contact-info__icon {
+          width: 7%;
+          margin-right: 4rem; }
+        .contact-us-form__container-right .contact-info__paragraph {
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-family: inherit;
+          color: #FFFFFF; }
+      .contact-us-form__container-right .push-down {
+        margin-bottom: auto !important; }
+      .contact-us-form__container-right .contact-us-social-media {
+        display: flex;
+        align-items: center; }
+        .contact-us-form__container-right .contact-us-social-media-icon {
+          width: 10%; }
+          .contact-us-form__container-right .contact-us-social-media-icon:not(:last-child) {
+            margin-right: 3rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .contact-us-section__info {
+    width: 100%;
+    flex-direction: column; }
+  .contact-us-section__illustration {
+    width: 50%;
+    margin-left: 0; }
+  .contact-us-form__container {
+    flex-direction: column; }
+    .contact-us-form__container-left {
+      width: 100%; }
+    .contact-us-form__container-right {
+      width: 100%; } }
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  .contact-us-form__container-right .contact-info__icon {
+    width: 4%; }
+  .contact-us-form__container-right .contact-us-social-media-icon {
+    width: 5%; } }
+
+.faq-section {
+  width: 100%;
+  padding: 20rem 5rem 10rem 5rem;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 30rem; }
+  .faq-section__header {
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 3rem;
+    color: #152850;
+    text-transform: uppercase; }
+  .faq-section__sub-header {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 2.9rem;
+    color: #152850;
+    text-transform: uppercase; }
+  .faq-section__paragraph {
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #152850;
+    margin-top: 6.5rem; }
+    .faq-section__paragraph a {
+      color: #00A8CC;
+      text-transform: uppercase;
+      transition: all 0.2s; }
+      .faq-section__paragraph a:hover {
+        color: white; }
+  .faq-section__info {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .faq-section__illustration {
+    width: 30%;
+    margin-left: auto; }
+
+.accordion-section {
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .accordion-section .accordion {
+    width: 50%;
+    margin-top: -5rem;
+    /* Accordion styles */ }
+    .accordion-section .accordion input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .accordion-section .accordion .row {
+      display: flex; }
+      .accordion-section .accordion .row .col {
+        flex: 1; }
+        .accordion-section .accordion .row .col:last-child {
+          margin-left: 1em; }
+    .accordion-section .accordion .tabs {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1); }
+      .accordion-section .accordion .tabs:not(:last-child) {
+        margin-bottom: 3rem; }
+    .accordion-section .accordion .tab {
+      width: 100%;
+      color: #152850;
+      overflow: hidden; }
+      .accordion-section .accordion .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem;
+        background: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: inherit;
+        cursor: pointer;
+        /* Icon */ }
+        .accordion-section .accordion .tab-label::after {
+          content: "\276F";
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all 0.35s; }
+      .accordion-section .accordion .tab-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: #152850;
+        background: white;
+        transition: all 0.35s; }
+      .accordion-section .accordion .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: #152850;
+        cursor: pointer; }
+    .accordion-section .accordion input:checked + .tab-label::after {
+      transform: rotate(90deg); }
+    .accordion-section .accordion input:checked ~ .tab-content {
+      max-height: 100vh;
+      padding: 4rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: inherit; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .faq-section__info {
+    flex-direction: column; }
+  .faq-section__header {
+    margin-bottom: 3rem; }
+  .faq-section__illustration {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 5rem; }
+  .accordion-section .accordion {
+    width: 90%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .faq-section__header {
+    margin-bottom: 3rem; } }
+
+.messages {
+  width: 100%;
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13rem; }
+  .messages__left {
+    width: 25%;
+    min-height: 50rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; }
+    .messages__left .chat-rect {
+      display: flex;
+      align-items: center;
+      padding: 4rem 2rem;
+      border-bottom: 1px solid #e2e2e2; }
+      .messages__left .chat-rect-img {
+        width: 13%;
+        margin-right: 2rem; }
+      .messages__left .chat-rect .message-info__person {
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: inherit;
+        color: black;
+        margin-bottom: 1rem; }
+      .messages__left .chat-rect .message-info__text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: inherit;
+        color: black; }
+  .messages__right {
+    width: 75%;
+    min-height: 50rem;
+    align-self: stretch;
+    border-left: 1px solid #e2e2e2; }
+    .messages__right .message-rect-sender {
+      width: 30%;
+      background-color: #f3f3f3;
+      padding: 3rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: inherit;
+      color: black;
+      margin-left: auto;
+      margin-right: 2rem; }
+    .messages__right .message-rect-reciever {
+      width: 30%;
+      background-color: #00A8CC;
+      padding: 3rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: inherit;
+      color: #FFFFFF;
+      margin-right: auto;
+      margin-left: 2rem; }
+    .messages__right form {
+      display: flex;
+      margin-top: 15rem; }
+      .messages__right form input {
+        width: 80%;
+        padding: 2rem 4rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: inherit;
+        color: black;
+        border-radius: 5rem;
+        border: 0.2rem solid #e2e2e2; }
+        .messages__right form input:focus {
+          outline: none; }
+      .messages__right form .message-sbt {
+        width: 15%;
+        padding: 2rem 4rem;
+        margin-left: auto;
+        margin-right: 2rem;
+        border-radius: 5rem;
+        border: none;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: inherit;
+        background-color: #00A8CC;
+        box-shadow: 0 0 3rem rgba(0, 168, 204, 0.3);
+        cursor: pointer; }
+
+.selected-chat {
+  background-color: #f5f5f5; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .chat-rect-img {
+    width: 7rem !important;
+    margin-right: 2rem; }
+  .chat-rect .message-info__person {
+    display: none; }
+  .chat-rect .message-info__text {
+    display: none; }
+  .message-rect-sender {
+    width: 90% !important;
+    margin-top: 1.5rem; }
+  .message-rect-reciever {
+    width: 90% !important;
+    margin-top: 1.5rem; }
+  .messages__right form {
+    flex-direction: column;
+    margin-top: 5rem; }
+  .messages__right form .message-sbt {
+    width: 90%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem; }
+  .messages__right form input {
+    width: 90%;
+    padding: 2rem 4rem;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.sign-in-required-container {
+  width: 100%;
+  min-height: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sign-in-required-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.sign-in-required-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #152850;
+  text-align: center; }
+
+.sign-in-required-btn {
+  padding: 2rem 6rem;
+  width: 50%;
+  margin-top: 5rem;
+  text-align: center;
+  background-color: #00A8CC;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  box-shadow: 0 0 3rem rgba(0, 168, 204, 0.3);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: inherit; }
+  .sign-in-required-btn:hover {
+    background-color: #152850;
+    color: white; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .sign-in-required-box {
+    width: 70%; }
+  .sign-in-required-header {
+    font-size: 2rem;
+    text-align: center; }
+  .sign-in-required-btn {
+    width: 85%; } }
 
 .swiper-container {
   width: 100%;
