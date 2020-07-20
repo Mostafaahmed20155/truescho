@@ -14,6 +14,10 @@
   &__info {
     width: 54%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &-examples {
       width: 100%;
@@ -133,6 +137,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
       }
     }
 
@@ -140,6 +147,7 @@
       display: flex;
       justify-content: center;
       margin-top: 4rem;
+      margin-left: 0 !important;
     }
     &-buttons {
       display: flex;
@@ -205,7 +213,7 @@
 
 .options-section {
   width: 100%;
-  height: 100rem;
+  min-height: 100rem;
   background-color: $color-tertiary-dark;
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
   background-image: url("/img/BG\ -\ Options\ Sections.png");
@@ -773,7 +781,7 @@
 
 .subscriptions-section {
   width: 100%;
-  height: 87.5rem;
+  min-height: 87.5rem;
   background-color: $color-tertiary-dark;
   display: flex;
   justify-content: center;
@@ -870,8 +878,11 @@
   .sign-up-as-a-person {
     width: 40rem;
     min-height: 40rem;
-    background-color: white;
-    position: relative;
+    // background-color: rgb(114, 113, 113);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__button {
       font-size: 1.5rem;
       font-weight: 600;
@@ -883,8 +894,6 @@
       border-radius: 5rem;
       box-shadow: 0 0 1.1rem rgba($color-secondary, $alpha: 0.58);
       color: $color-tertiary;
-      position: absolute;
-      bottom: 0;
       transition: all 0.2s;
       &:hover {
         background-color: $color-primary;
@@ -895,7 +904,10 @@
     width: 45rem;
     min-height: 40rem;
     background-color: white;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__button {
       font-size: 1.5rem;
       font-weight: 600;
@@ -907,8 +919,6 @@
       border-radius: 5rem;
       box-shadow: 0 0 1.1rem rgba($color-secondary, $alpha: 0.58);
       color: $color-tertiary;
-      position: absolute;
-      bottom: 0;
       transition: all 0.2s;
       &:hover {
         background-color: $color-secondary;
@@ -1081,7 +1091,7 @@
 
 .social-media-section {
   width: 100%;
-  height: 62.3rem;
+  min-height: 62.3rem;
   background-color: $color-tertiary-dark;
   display: flex;
   justify-content: center;
@@ -1132,7 +1142,7 @@
 
 .newsletter-section {
   width: 100%;
-  height: 60rem;
+  min-height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1215,9 +1225,199 @@
   }
 }
 
-.landing-section__info-buttons-section {
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .landing-section {
+    clip-path: none;
+    min-height: 135.8rem; 
+    
+}
+  .landing-section__info-header {
+    font-size: 3rem;
+    text-align: center;
+}
+  .landing-section__info-examples {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-option {
+      margin-bottom: 2rem;
+    }
+}
+.landing-section__info {
+  text-align: center;
+  align-items: center;
   display: flex;
-  justify-content: end !important;
+  flex-direction: column;
+}
+.landing-section__info-buttons-section {
+  justify-content: center !important;
   margin-top: 4rem;
-  margin-left: 35rem !important;
+  margin-left: 0 !important;
+  flex-direction: column;
+  text-align: center;
+}
+.world-wide-section_info {
+  width: 100%;
+}
+.world-wide-section_info-illustration {
+  width: 35rem;
+  margin-top: 3rem;
+}
+.world-wide-section {
+  flex-direction: column;
+  padding: 4rem;
+}
+.world-wide-section_info-text {
+  width: 100%;
+}
+
+.options-section {
+    // height: 140rem;
+    min-height: 100rem;
+    clip-path: none; 
+    padding: 5rem 0;
+    background-image: none;
+
+}
+.options-section__cards-info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.options-section__card:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.options-section__card:not(:last-child) {
+  margin-right: 0;
+}
+.best-scolarships-section {
+  min-height: 137.5rem;
+}
+.best-services-section .btn-view-more {
+  margin-top: 3rem;
+}
+.subscriptions-section {
+   flex-direction: row;
+}
+.subscriptions-section__content-box {
+  flex-direction: column;
+}
+.subscriptions-section__content-box .subscriptions-card {
+  margin-right: 0; 
+  margin-bottom: 3rem;
+}
+.subscriptions-card__illusrations {
+  width: 38rem;
+  margin-bottom: 3rem;
+}
+.subscriptions-section__header {
+  padding-top: 5rem;
+}
+.sign-up-section__content-box {
+  flex-direction: column;
+}
+.sign-up-as-a-person__illustration {
+  width: 40rem;
+}
+.sign-up-as-an-org__illustration {
+  width: 40rem;
+}
+.sign-up-section .sign-up-as-an-org {
+  width: 40rem;
+}
+.sign-up-section .sign-up-as-an-org__button {
+  padding: 2.5rem 7rem;
+  margin-top: 3rem;
+}
+.sign-up-section .sign-up-as-a-person__button {
+ margin-top: 3rem;
+}
+.stats-section {
+  min-height: 90rem;
+  clip-path: none;
+  flex-direction: column;  
+}
+.testmonials-section {
+  margin-top: 0;
+}
+.partners-section__content-box-org-container {
+  width: 100%
+}
+.social-media-section__content-box {
+  flex-direction: column;
+}
+.social-media-section .social-media__card:not(:last-child) {
+  margin-right: 0;
+}
+.social-media-section .social-media__card {
+  margin-bottom: 7rem;
+}
+.social-media-section__header {
+  padding-bottom: 5rem;
+}
+.newsletter-section__content-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletter-section__illustration {
+  width: 30rem;
+  margin-top: 5rem;
+}
+.newsletter-section .subscription-input {
+  width: 100%;
+}
+.newsletter-section .subscription-input__paragraph {
+  padding-right: 0;
+  padding-left: 5rem;
+}
+.newsletter-section .subscription-input__email {
+  width: 100%;
+  font-size: 1.5rem;
+  padding-left: 4.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.newsletter-section .subscription-input__email-button {
+  font-size: 1.5rem;
+  padding: 3.4rem 2.3rem 2.71rem 2.3rem;
+  cursor: pointer;
+  border-radius: 0 4.8rem 4.8rem 0;
+  transition: all 0.2s;
+}
+.landing-section__info-selections .custom-select {
+   width: 100%;
+}
+.landing-section__info-selections .selection-div {
+ width: 100%;
+}
+.landing-section__info-selections {
+ width: 100%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .world-wide-section {
+    flex-direction: row;
+}
+.world-wide-section_info-text {
+  width: 85%;
+}
+.options-section__cards-info {
+  flex-direction: row;
+}
+.options-section__cards-info {
+  width: 75%;
+  flex-wrap: wrap;
+}
+.options-section__card:not(:last-child) {
+  margin-bottom: 0rem;
+}
+.options-section__card {
+  margin-right: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.newsletter-section .subscription-input {
+  width: 70%;
+}
 }
