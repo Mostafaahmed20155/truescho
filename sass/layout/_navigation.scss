@@ -90,6 +90,17 @@
       }
     }
   }
+  .nav-btn {
+    padding: 2rem 5rem;
+    background-color: $color-primary;
+    border-radius: 6rem;
+    color: $color-tertiary;
+    transition: all .2s;
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-tertiary;
+    }
+  }
 }
 
 // SIDE BAR

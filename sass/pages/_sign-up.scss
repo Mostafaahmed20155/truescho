@@ -225,10 +225,10 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .fluid-containter {
-    width: 80rem;
+    width: 100%;
     height: 100vh;
     display: flex;
-    padding: 10rem;
+    padding: 1rem;
     &__right-illustration {
       display: none;
     }
@@ -239,6 +239,22 @@
   .position-fix-left {
     display: none;
   }
+  .fluid-containter .sign-up-box {
+    min-width: 100%;
+    padding: 7rem 4rem;
+}
+.fluid-containter__left-illustration {
+  width: 100%;
+}
+.fluid-containter .sign-up-box__form {
+  width: 100%;
+}
+.fluid-containter .sign-up-box .input-width-fix {
+  width: 100%;
+}
+.fluid-containter .sign-up-box {
+  align-self: auto;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .fluid-containter {
@@ -252,5 +268,12 @@
 }
 .position-fix-left {
   display: block;
+}
+.fluid-containter .sign-up-box {
+  align-self: auto;
+  min-width: 85%;
+}
+.sign-up-3 {
+  justify-content: center !important;
 }
 }

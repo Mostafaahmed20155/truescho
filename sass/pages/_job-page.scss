@@ -300,11 +300,19 @@
     height: 35rem;
   }
   .organization-profile-info-box {
-    bottom: -50%;
-    flex-direction: column;
+    bottom: -35%;
+    flex-direction: row;
+    left: 5%;
   }
+  .organization-profile-pic {
+    width: 100%;
+  }
+  .organization-profile-pic-box {
+    width: 20rem;
+    height: 20rem;
+}
   .organization-info {
-    align-self: auto;
+    align-self: flex-end;
   }
   .org-job-section-info .right-panel .job-comments .user-job-comment {
     flex-direction: column;
@@ -316,6 +324,20 @@
     align-items: center;
     flex-direction: column;
   }
+  .org-job-section-info .right-panel {
+    width: 95%;
+}
+.popup__content {
+  width: 95% !important;
+  flex-direction: column;
+}
+.applying-for-job-illustration-box {
+  display: none;
+}
+.popup__right {
+  padding: 0 !important;
+  width: 100% !important;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .org-job-section-info .right-panel {
@@ -348,3 +370,4 @@
     }
   }
   
+
