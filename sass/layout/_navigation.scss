@@ -257,6 +257,17 @@ a:hover {
   opacity: 1;
 }
 
+.extra-selection {
+  display: none;
+}
+
+.head-sub-menu-item {
+  display: flex;
+}
+.head-sub-menu-item:hover .extra-selection {
+  display: block;
+}
+
 //RESPONSIVE
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   .nav-bar {

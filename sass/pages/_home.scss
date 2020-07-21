@@ -1229,8 +1229,8 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .landing-section {
     clip-path: none;
-    min-height: 135.8rem; 
-    
+    min-height: 111.8rem; 
+    margin-top: 10rem;
 }
   .landing-section__info-header {
     font-size: 3rem;
@@ -1249,6 +1249,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .landing-section__info-buttons-section {
   justify-content: center !important;
@@ -1284,12 +1285,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
 .options-section__card:not(:last-child) {
   margin-bottom: 5rem;
 }
 .options-section__card:not(:last-child) {
   margin-right: 0;
+}
+.options-section__card {
+  width: 90%;
 }
 .best-scolarships-section {
   min-height: 137.5rem;
@@ -1395,6 +1400,12 @@
 .landing-section__info-selections {
  width: 100%;
 }
+.partners-section__content-box-org-container {
+  width: 50% !important;
+}
+.partners-section__content-box-org-logo {
+  width: 16rem;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .world-wide-section {
@@ -1419,5 +1430,11 @@
 }
 .newsletter-section .subscription-input {
   width: 70%;
+}
+.social-media-section__content-box {
+  flex-direction: row;
+}
+.social-media-section .social-media__card:not(:last-child) {
+  margin-right: 3rem;
 }
 }
