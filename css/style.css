@@ -217,10 +217,6 @@ body {
   .organizations-card {
     margin-right: 2.5rem; } }
 
-h1 {
-  font-size: 3rem;
-  color: blue; }
-
 .pagination {
   text-align: center;
   display: flex;
