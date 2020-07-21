@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     &__name {
       font-weight: 700;
       font-family: inherit;
@@ -95,7 +95,7 @@
     background-color: $color-primary;
     border-radius: 6rem;
     color: $color-tertiary;
-    transition: all .2s;
+    transition: all 0.2s;
     &:hover {
       background-color: $color-secondary;
       color: $color-tertiary;
@@ -141,7 +141,7 @@ a:hover {
 #menuToggle {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 50px;
 
   z-index: 1;
@@ -268,10 +268,29 @@ a:hover {
   display: block;
 }
 
+
+
 //RESPONSIVE
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   .nav-bar {
     display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .responsive-nav-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    &__list {
+      display: flex;
+      align-items: center;
+      margin-right: 8rem;
+      &-item {
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+      }
+    }
   }
 }
 
