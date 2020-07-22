@@ -142,7 +142,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 40px;
-  right: 50px;
+  right: 25px;
 
   z-index: 1;
 
@@ -276,11 +276,11 @@ a:hover {
     display: none;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .responsive-nav-icons {
     display: flex;
     align-items: center;
-    margin-right: 3rem;
     &__list {
       display: flex;
       align-items: center;
@@ -298,10 +298,13 @@ a:hover {
   #menuToggle {
     display: none;
   }
+  .responsive-nav-icons {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .navigation {
-    padding: 4rem 2.8rem;
+    padding: 4rem 1rem;
   }
 }

@@ -434,7 +434,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 40px;
-  right: 50px;
+  right: 25px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none; }
@@ -543,8 +543,7 @@ a:hover {
 @media only screen and (max-width: 1024px) {
   .responsive-nav-icons {
     display: flex;
-    align-items: center;
-    margin-right: 3rem; }
+    align-items: center; }
     .responsive-nav-icons__list {
       display: flex;
       align-items: center;
@@ -554,11 +553,13 @@ a:hover {
 
 @media only screen and (min-width: 1025px) {
   #menuToggle {
+    display: none; }
+  .responsive-nav-icons {
     display: none; } }
 
 @media only screen and (max-width: 1200px) {
   .navigation {
-    padding: 4rem 2.8rem; } }
+    padding: 4rem 1rem; } }
 
 .footer {
   width: 100%;
@@ -1892,7 +1893,8 @@ a:hover {
     justify-content: center;
     align-items: center; }
     .landing-section__info-examples-option {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      width: 100%; }
   .landing-section__info {
     text-align: center;
     align-items: center;
