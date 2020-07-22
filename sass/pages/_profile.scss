@@ -89,7 +89,10 @@
       }
       .gender-options {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        .options {
+          margin-right: 5rem;
+        }
       }
       .profile-input__raido-label {
         font-size: 1.8rem;

@@ -643,9 +643,13 @@ a:hover {
     margin-bottom: 2rem; }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
+  .footer {
+    padding-left: 4rem; }
   .footer__left {
     width: 100%;
     margin-bottom: 5rem; }
+  .footer__right {
+    width: 100%; }
   .footer__left-logo {
     width: 70%;
     margin-bottom: 0rem; }
@@ -5282,8 +5286,9 @@ a:hover {
         border-radius: 0.5rem;
         font-size: 1.8rem; }
       .profile-info__middle-box .profile-input .gender-options {
-        display: flex;
-        justify-content: space-between; }
+        display: flex; }
+        .profile-info__middle-box .profile-input .gender-options .options {
+          margin-right: 5rem; }
       .profile-info__middle-box .profile-input .profile-input__raido-label {
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -5445,7 +5450,8 @@ a:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .left-box-width-fix {
-    width: 90% !important; }
+    width: 90% !important;
+    margin-top: 30rem; }
   .profile-info .extra-info-container {
     flex-direction: column; }
   .profile-info__left-box .country-picture {
