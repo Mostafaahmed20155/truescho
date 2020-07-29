@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
   </head>
   <body>
     <div class="navigation" id="navbar">
@@ -179,11 +182,18 @@
         <div class="post-details__rating">
           <h1 class="post-details__rating-header">Rate this topic</h1>
           <div class="post-details__rating-stars-box">
-            <img
-              src="img/empty-stars.png"
-              alt="Empty Stars"
-              class="post-details__rating-stars"
-            />
+            <div class="rating">
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5"></label>
+              <input type="radio" name="rating" id="rating-4">
+              <label for="rating-4"></label>
+              <input type="radio" name="rating" id="rating-3">
+              <label for="rating-3"></label>
+              <input type="radio" name="rating" id="rating-2">
+              <label for="rating-2"></label>
+              <input type="radio" name="rating" id="rating-1">
+              <label for="rating-1"></label>
+            </div>
           </div>
         </div>
       </div>
@@ -271,11 +281,21 @@
         <div class="footer__left">
           <img src="img/truescho-logo-new-version.png" alt="new logo" class="footer__left-logo">
           <div class="footer__left-social">
-            <img src="img/facebook.png" alt="fb-icon" class="footer__left-social-icon">
-            <img src="img/twitter.png" alt="twitter-icon" class="footer__left-social-icon">
-            <img src="img/instagram.png" alt="instgram-icon" class="footer__left-social-icon">
-            <img src="img/linkedin.png" alt="linkedin-icon" class="footer__left-social-icon">
-            <img src="img/telegram.png" alt="telegram-icon" class="footer__left-social-icon">
+            <a href="#"" class="footer__left-social-icon">
+              <img src="img/facebook.png" alt="fb-icon" class="sm-icon">
+            </a>
+            <a href="#" class="footer__left-social-icon">
+              <img src="img/twitter.png" alt="twitter-icon" class="sm-icon">
+            </a>
+            <a href="#" class="footer__left-social-icon">
+              <img src="img/instagram.png" alt="instgram-icon" class="sm-icon">
+            </a>
+            <a href="#" class="footer__left-social-icon">
+              <img src="img/linkedin.png" alt="linkedin-icon" class="sm-icon">
+            </a>
+            <a href="#" class="footer__left-social-icon">
+              <img src="img/telegram.png" alt="telegram-icon" class="sm-icon">
+            </a>
           </div>
           <p class="footer__left-copywrites">Copywrites &copy; reserved at Truescho</p>
         </div>

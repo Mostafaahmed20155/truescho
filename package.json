@@ -25,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
-    "countup.js": "^2.0.5"
+    "countup.js": "^2.0.5",
+    "jquery": "^3.5.1"
   }
 }

@@ -27,6 +27,9 @@
       &:not(:last-child) {
         margin-right: 5.9rem;
       }
+      padding: 5rem 0; 
+      transition: all .2s;
+
       &-nav {
         text-decoration: none;
         text-transform: uppercase;
